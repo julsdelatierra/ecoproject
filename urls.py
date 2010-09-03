@@ -1,11 +1,15 @@
 from django.conf.urls.defaults import *
-from website.views import index
+from website.views import somos, contacto, faq, inicio, servicios
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    (r'^index/$',index),
+    (r'^inicio/$',inicio),
+    (r'^somos/$',somos),
+    (r'^contacto/$',contacto),
+    (r'^faq/$',faq),
+    (r'^servicios/$',servicios),
     # Example:
     # (r'^ecoproject/', include('ecoproject.foo.urls')),
 

@@ -1,5 +1,6 @@
 # Django settings for ecoproject project.
-
+import os
+PATH = os.path.abspath(os.path.dirname('__file__'))+'/'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -78,6 +79,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'ecoproject.urls'
 
 TEMPLATE_DIRS = (
+    PATH+'templates'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
