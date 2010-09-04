@@ -1,6 +1,6 @@
 # Django settings for ecoproject project.
 import os
-PATH = os.path.abspath(os.path.dirname('__file__'))+'/'
+PATH = os.getcwd()+os.sep
 URL = 'http://localhost:8000/'
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -94,5 +94,5 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'ecoproject.website',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
 )

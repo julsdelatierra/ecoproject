@@ -10,6 +10,8 @@ urlpatterns = patterns('',
     (r'^contacto/$',contacto),
     (r'^faq/$',faq),
     (r'^servicios/$',servicios),
+    #(r'^admin/', include(admin.site.urls)),
+    
     # Example:
     # (r'^ecoproject/', include('ecoproject.foo.urls')),
 
