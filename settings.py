@@ -2,6 +2,7 @@
 import os
 PATH = os.getcwd()+os.sep
 URL = 'http://localhost:8000/'
+STATIC = PATH+'media'+os.sep
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
