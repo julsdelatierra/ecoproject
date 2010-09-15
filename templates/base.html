@@ -6,17 +6,26 @@
 <style type="text/css">
 </style>
 
-<title>Untitled Document</title>
+<title>{%block title%}{%endblock%}</title>
 <link href="/medios/css/estilo.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
 <div id="container">
-<div id="head">HEAD</div>
-<div id="contenido">CONTENIDO</div>
-<div id="footer">FOOTER</div>
+<div id="menu"></div>
+<div id="header">{%block header%}{%endblock%}</div>
+<div id="content">{%block content%}{%endblock%}</div>
 
 </div>
+
+<div id="footer">
+	<div id="arrow_footer"></div>
+		<div id="footer_content">
+		<span id="address">Avenida 56-A # 236 x 58-A y 60, Col. Alcalá Martín - Mérida, YUC, México 97050</span>
+		<span id="year">ECO Consultores, {{year}}  ®</span>
+	</div>
+</div>
+
 </body>
 </html>

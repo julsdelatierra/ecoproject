@@ -1,10 +1,52 @@
 @charset "utf-8";
 /* CSS Document */
+@font-face {
+	font-family: 'TitilliumText15L400wt';
+	src: url('titillium15l400w-webfont.eot');
+	src: local('☺'), url('/medios/fonts/titillium15l400w-webfont.woff') format('woff'), url('/medios/fonts/titillium15l400w-webfont.ttf') format('truetype'), url('/medios/fonts/titillium15l400w-webfont.svg#webfontzYm6nPAO') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
-body{background:url(/medios/img/fondo.jpg); margin:0px auto;}
-#container{width:960px; height:auto; margin:0px auto;}
-#menu{width:960px; float:left; height:120px;}
-#head{}
-#content{}
-#footer{}
+*{
+	font-weight: normal;
+	font-style: normal;
+	line-height:normal;
+	font-family: 'TitilliumText15L400wt', sans-serif;
+	font-size-adjust: 0.5;
 
+	}
+
+body{background:url(/medios/img/fondo.jpg) fixed; margin:0px auto;}
+#container{width:960px; margin:0px auto;}
+#menu{width:960px; float:left; height:145px; background:url(/medios/img/menu_bg.png)}
+#video_container{width:560px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
+#video_container .video{width:560px; height:330px; background:#000;}
+
+#header{width:960px; height:284px; float:left;}
+#content{width:960px; float:left;}
+
+#footer{
+	float:left;
+	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom;
+	height:76px;
+    width: 100%;
+	}
+	
+#footer #arrow_footer{
+	background:url(/medios/img/arrow_up_footer.png) no-repeat;
+	background-position:862px 10px;
+	width:960px;
+	height:50px;
+	margin:0px auto;
+	}
+
+#footer_content{
+	width:960px; 
+	margin:0px auto; 
+	color:#FFF; 
+	font-size:12px; 
+	text-shadow:0.1em 0.1em #333;}
+
+
+#year{float:right;}
