@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
-from website.views import somos, contacto, faq, inicio, servicios
+from website.views import inicio, empresa, servicios, portafolio, faq, contacto
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -9,11 +9,12 @@ urlpatterns = patterns('',
     (r'^medios/(?P<path>.*)$', 'django.views.static.serve',
      {'document_root': settings.STATIC, 'show_indexes':True}),
     (r'^inicio/$',inicio),
-    (r'^somos/$',somos),
-    (r'^contacto/$',contacto),
-    (r'^faq/$',faq),
+    (r'^empresa/$',empresa),
     (r'^servicios/$',servicios),
-    
+    (r'^servicios/$',servicios),
+    (r'^portafolio/$',portafolio),
+    (r'^faq/$',faq),
+    (r'^contacto/$',contacto),
     # Example:
     # (r'^ecoproject/', include('ecoproject.foo.urls')),
 
