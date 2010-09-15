@@ -94,6 +94,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'ecoproject.website',
-    # Uncomment the next line to enable the admin:
-    #'django.contrib.admin',
+    'ecoproject.admin',
+    'django.contrib.admin',
 )
