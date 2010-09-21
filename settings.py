@@ -97,3 +97,9 @@ INSTALLED_APPS = (
     'ecoproject.admin',
     'django.contrib.admin',
 )
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'website.context_processors.default',
+    'django.core.context_processors.auth',
+    'django.core.context_processors.i18n',
+)
