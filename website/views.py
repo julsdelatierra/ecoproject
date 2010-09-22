@@ -14,14 +14,13 @@ def servicios(request):
 def portafolio(request):
     from models import Project
     projects = Project.objects.all()
-    print projects
-    return render_to_response('portafolio.html',{},context_instance=RequestContext(request))
+    return render_to_response('portafolio.html',{'projects':projects},context_instance=RequestContext(request))
     
 def faq(request):
     from models import Topic
+    from django.utils import simplejson
     topics = Topic.objects.all()
-    print topics
-    return render_to_response('faq.html',{},context_instance=RequestContext(request))
+    return render_to_response('faq.html',{'topics':topics},context_instance=RequestContext(request))
 
 def getQuestions(request):
     if request.is_ajax():

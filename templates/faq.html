@@ -5,8 +5,10 @@
 
 {%endblock%}
 
-
-
 {%block content%}
-
+    <ul>
+    {%for t in topics%}
+        <li id="{{t.id}}">{{t.title}}</li>
+    {%endfor%}
+    </ul>
 {%endblock%}

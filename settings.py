@@ -53,7 +53,7 @@ MEDIA_ROOT = PATH+'media/'
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash if there is a path component (optional in other cases).
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
-MEDIA_URL = URL+'media/'
+MEDIA_URL = URL+'medios/'
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
@@ -102,4 +102,5 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'website.context_processors.default',
     'django.core.context_processors.auth',
     'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
 )

@@ -4,8 +4,12 @@
 
 {%endblock%}
 
-
-
 {%block content%}
-
+    <ul>
+    {%for project in projects%}
+    <li>
+        <img src="{{MEDIA_URL}}{{project.image}}" alt="" />
+    </li>
+    {%endfor%}
+    </ul>
 {%endblock%}

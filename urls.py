@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^medios/(?P<path>.*)$', 'django.views.static.serve',
-     {'document_root': settings.STATIC, 'show_indexes':True}),
+     {'document_root': settings.STATIC, 'show_indexes':False}),
     (r'^$',inicio),
     (r'^empresa/$',empresa),
     (r'^servicios/$',servicios),
