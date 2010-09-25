@@ -18,15 +18,18 @@
 	}
 
 body{background:url(/medios/img/fondo.jpg) fixed; margin:0px auto;}
+
 a{text-decoration:none; display:block;}
 a:hover{text-decoration:underline;}
+#boton_index_logo{width:150px; height:150px; margin:0 0 0 85px; position:absolute;}
+#boton_index_logo a{display:block;}
 #container{width:960px; margin:0px auto;}
 #menu_container{width:960px; height:145px; float:left; background:url(/medios/img/menu_bg.png)}
 #language_switch_button{width:960px; height:40px; float:right;}
 #language_switch_button a{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:italic;}
-#menu{float:right; margin:15px 48px 0 0;}
-#menu li{display:inline-block; font-size:13pt;}
-#menu li a{padding:8px 22px; background:#6CF; color:#000;}
+#menu{float:right; margin:14px 40px 0 0;}
+#menu li{list-style:none; float:left; font-size:13pt;}
+#menu li a{padding:9px 25px; background:#6CF; color:#000;}
 #menu li a:hover{background:#66C;}
 
 #video_container{width:560px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
