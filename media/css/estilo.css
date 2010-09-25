@@ -16,7 +16,7 @@
 	font-size-adjust: 0.5;
 
 	}
-
+/*all content*/
 body{background:url(/medios/img/fondo.jpg) fixed; margin:0px auto;}
 
 a{text-decoration:none; display:block;}
@@ -30,7 +30,7 @@ a:hover{text-decoration:underline;}
 #menu{float:right; margin:14px 40px 0 0;}
 #menu li{list-style:none; float:left; font-size:13pt;}
 #menu li a{padding:9px 25px; background:#6CF; color:#000;}
-#menu li a:hover{background:#66C;}
+#menu li a:hover{background:#000;}
 
 #video_container{width:560px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
 #video_container .video{width:560px; height:330px; background:#000;}
