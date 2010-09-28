@@ -7,8 +7,8 @@
 
 {%block content%}
     <ul>
-    {%for t in topics%}
-        <li id="{{t.id}}">{{t.title}}</li>
+    {%for topic in topics%}
+        <li id="{{topic.id}}">{{topic.title}}</li>
     {%endfor%}
     </ul>
 {%endblock%}
