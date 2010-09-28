@@ -30,10 +30,15 @@ a:hover{text-decoration:underline;}
 #menu{float:right; margin:14px 40px 0 0;}
 
 #menu li{list-style:none; float:left; font-size:13pt; }
-#menu li a{padding:9px 25px; color:#000;}
-#menu li#item_menu_inicio a:hover{background:url(/medios/img/item_menu_inicio_back.gif) no-repeat; color:#FFF;}
-#menu li#item_menu a:hover{background:url(/medios/img/item_menu_back.gif) no-repeat; color:#FFF;}
-#menu li#item_menu_final a:hover{background:url(/medios/img/item_menu_final_back.gif) right no-repeat; color:#FFF;}
+/*#menu li a{padding:9px 25px; color:#000;}*/
+
+#menu li.item_menu_inicio a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_inicio_normal.gif) no-repeat;}
+#menu li.item_menu a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_normal.gif) no-repeat;}
+#menu li.item_menu_final a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_final_normal.gif) right no-repeat;}
+
+#menu li.item_menu_inicio a:hover{background:url(/medios/img/item_menu_inicio_back.gif) no-repeat; color:#FFF;}
+#menu li.item_menu a:hover{background:url(/medios/img/item_menu_back.gif) no-repeat; color:#FFF;}
+#menu li.item_menu_final a:hover{background:url(/medios/img/item_menu_final_back.gif) right no-repeat; color:#FFF;}
 
 #menu li{list-style:none; float:left; font-size:13pt;}
 #menu li a{padding:9px 25px; background:#6CF; color:#000;}
