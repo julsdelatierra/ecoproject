@@ -27,34 +27,57 @@ a:hover{text-decoration:underline;}
 #menu_container{width:960px; height:145px; float:left; background:url(/medios/img/menu_bg.png)}
 #language_switch_button{width:960px; height:40px; float:right;}
 #language_switch_button a{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:italic;}
-#menu{float:right; margin:14px 40px 0 0;}
 
+#menu{float:right; margin:14px 40px 0 0; text-decoration:none;}
+#menu a:hover{text-decoration:none;}
 #menu li{list-style:none; float:left; font-size:13pt; }
-
-
 #menu li.item_menu_inicio a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_inicio_normal.gif) no-repeat;}
 #menu li.item_menu a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_normal.gif) no-repeat;}
 #menu li.item_menu_final a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_final_normal.gif) right no-repeat;}
-
 #menu li.item_menu_inicio a:hover{background:url(/medios/img/item_menu_inicio_back.gif) no-repeat; color:#FFF;}
 #menu li.item_menu a:hover{background:url(/medios/img/item_menu_back.gif) no-repeat; color:#FFF;}
 #menu li.item_menu_final a:hover{background:url(/medios/img/item_menu_final_back.gif) right no-repeat; color:#FFF;}
-
 #menu li{list-style:none; float:left; font-size:13pt;}
 #menu li a{padding:9px 25px; background:#6CF; color:#000;}
 #menu li a:hover{background:#000;}
 
-#video_container{width:560px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
-#video_container .video{width:560px; height:330px; background:#000;}
+
 
 #header{width:960px; float:left;}
 #content{width:960px; float:left;}
+
+/*Inicio*/
+#video_container{width:560px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
+#video_container .video{width:560px; height:330px; background:#000;}
 
 #globo_inicio{width:572px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 35px 0 0;}
 #globo_inicio #big_text{width:572px; height:191px; float:right; background:(/medios/img/globo_inicio.png) no-repeat; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
 #globo_inicio #tiny_text{width:572px; height:191px; float:right; background:(/medios/img/globo_inicio.png) no-repeat; font-size:14pt; color:#6D6E71; float:right;}
 #parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 15px 0;}
 #parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; font-style:italic; color:#000; display:block;}
+/* /inicio*/
+
+/*portafolio*/
+#head_portfolio{width:960px; height:284px; float:left; background:url(/medios/img/header_big_bg.png) no-repeat; margin:0 0 25px 0;}
+#head_portfolio #title{width:572px; color:#FFF; font-size:35pt; float:right; margin:77px 10px 0 0; text-align:left;}
+#head_portfolio #subtitle{width:572px; color:#231F20; font-size:14pt; float:right; text-align:left; margin:0 10px 0 0;}
+#content #headline{color:#6D6E71; text-align:center; font-size:38pt;}
+#content #headline span{color:#56AC41;}
+
+.globe_portfolio{width:917px; height:224px;  background:url(/medios/img/globo_portafolio.png) no-repeat 0 31px; margin:25px auto; display:block; overflow:hidden;}
+.globe_portfolio .arrow_01{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png)  no-repeat 75px 0; display:block; float:left;}
+.globe_portfolio .arrow_02{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 245px 0; display:block; float:left;}
+.globe_portfolio .arrow_03{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 415px 0; display:block; float:left;}
+.globe_portfolio .arrow_04{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 585px 0; display:block; float:left;}
+.globe_portfolio .arrow_05{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 755px 0; display:block; float:left;}
+
+.globe_portfolio #logo{margin:35px 0 0 45px; float:left;}
+.globe_portfolio #title{margin:35px 0 0 50px; font-size:14pt; float:left; color:#27AAE1; }
+.globe_portfolio #description{margin:20px 0 0 50px; float:left; width:700px; height:150px; overflow:auto; color:#58595B; font-size:12pt;}
+
+li.project_button{list-style:none; margin:25px 25px; float:left;}
+
+/* /portafolio*/
 
 #footer{
 	float:left;
