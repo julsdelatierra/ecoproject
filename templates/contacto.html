@@ -7,5 +7,9 @@
 
 
 {%block content%}
-
+<ul>
+{%for d in data%}
+    <li>{{d}}</li>
+{%endfor%}
+</ul>
 {%endblock%}

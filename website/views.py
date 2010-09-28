@@ -42,8 +42,8 @@ def getAnswer(request):
     if request.is_ajax():
         from models import Answer
         answer = Answer.objects.get(question__exact=request.POST['question'])
-        print answer
     return HttpResponse('hola')
     
 def contacto(request):
-    return render_to_response('contacto.html',{},context_instance=RequestContext(request))
+    data = [1,2,3,4]
+    return render_to_response('contacto.html',{'data':data},context_instance=RequestContext(request))
