@@ -30,7 +30,7 @@ a:hover{text-decoration:underline;}
 #menu{float:right; margin:14px 40px 0 0;}
 
 #menu li{list-style:none; float:left; font-size:13pt; }
-/*#menu li a{padding:9px 25px; color:#000;}*/
+
 
 #menu li.item_menu_inicio a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_inicio_normal.gif) no-repeat;}
 #menu li.item_menu a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_normal.gif) no-repeat;}
@@ -49,6 +49,12 @@ a:hover{text-decoration:underline;}
 
 #header{width:960px; float:left;}
 #content{width:960px; float:left;}
+
+#globo_inicio{width:572px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 35px 0 0;}
+#globo_inicio #big_text{width:572px; height:191px; float:right; background:(/medios/img/globo_inicio.png) no-repeat; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
+#globo_inicio #tiny_text{width:572px; height:191px; float:right; background:(/medios/img/globo_inicio.png) no-repeat; font-size:14pt; color:#6D6E71; float:right;}
+#parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 15px 0;}
+#parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; font-style:italic; color:#000; display:block;}
 
 #footer{
 	float:left;
