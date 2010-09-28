@@ -16,7 +16,7 @@
 	font-size-adjust: 0.5;
 
 	}
-
+/*all content*/
 body{background:url(/medios/img/fondo.jpg) fixed; margin:0px auto;}
 
 a{text-decoration:none; display:block;}
@@ -28,12 +28,18 @@ a:hover{text-decoration:underline;}
 #language_switch_button{width:960px; height:40px; float:right;}
 #language_switch_button a{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:italic;}
 #menu{float:right; margin:14px 40px 0 0;}
+<<<<<<< HEAD
 #menu li{list-style:none; float:left; font-size:13pt; }
 #menu li a{padding:9px 25px; color:#000;}
 #menu li#item_menu_inicio a:hover{background:url(/medios/img/item_menu_inicio_back.gif) no-repeat; color:#FFF;}
 #menu li#item_menu a:hover{background:url(/medios/img/item_menu_back.gif) no-repeat; color:#FFF;}
 #menu li#item_menu_final a:hover{background:url(/medios/img/item_menu_final_back.gif) right no-repeat; color:#FFF;}
 
+=======
+#menu li{list-style:none; float:left; font-size:13pt;}
+#menu li a{padding:9px 25px; background:#6CF; color:#000;}
+#menu li a:hover{background:#000;}
+>>>>>>> mockup
 
 #video_container{width:560px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
 #video_container .video{width:560px; height:330px; background:#000;}
