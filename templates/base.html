@@ -2,20 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<style type="text/css">
-</style>
-
 <title>{%block title%}{%endblock%}</title>
-<link href="/medios/css/estilo.css" rel="stylesheet" type="text/css" />
+<link href="{{MEDIA_URL}}css/estilo.css" rel="stylesheet" type="text/css" />
+<script type="aplication/javascript" src="{{MEDIA_URL}}js/jquery.js"></script>
+<script type="aplication/javascript" src="{{MEDIA_URL}}js/lib.js"></script>
+<script type="aplication/javascript" src="{{MEDIA_URL}}js/action.js"></script>
 </head>
-
 <body>
-
 <div id="container">
 <div id="menu_container">
 <a href="/"><div id="boton_index_logo"></div></a>
-
 	<div id="language_switch_button">
     <a href="#">Switch to English</a>
     </div>
