@@ -57,13 +57,15 @@ a:hover{text-decoration:underline;}
 #parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; font-style:italic; color:#000; display:block;}
 /* /inicio*/
 
-/*portafolio*/
-#head_portfolio{width:960px; height:284px; float:left; background:url(/medios/img/header_big_bg.png) no-repeat; margin:0 0 25px 0;}
-#head_portfolio #title{width:572px; color:#FFF; font-size:35pt; float:right; margin:77px 10px 0 0; text-align:left;}
-#head_portfolio #subtitle{width:572px; color:#231F20; font-size:14pt; float:right; text-align:left; margin:0 10px 0 0;}
+/* General */
+#head_big{width:960px; height:284px; float:left; background:url(/medios/img/header_big_bg.png) no-repeat; margin:0 0 25px 0;}
+#head_big #title{width:572px; color:#FFF; font-size:35pt; float:right; margin:77px 10px 0 0; text-align:left;}
+#head_big #subtitle{width:572px; color:#231F20; font-size:14pt; float:right; text-align:left; margin:0 10px 0 0;}
 #content #headline{color:#6D6E71; text-align:center; font-size:38pt;}
 #content #headline span{color:#56AC41;}
+/* General */
 
+/*portafolio*/
 .globe_portfolio{width:917px; height:224px;  background:url(/medios/img/globo_portafolio.png) no-repeat 0 31px; margin:25px auto; display:block; overflow:hidden;}
 .globe_portfolio .arrow_01{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png)  no-repeat 75px 0; display:block; float:left;}
 .globe_portfolio .arrow_02{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 245px 0; display:block; float:left;}
@@ -78,6 +80,15 @@ a:hover{text-decoration:underline;}
 li.project_button{list-style:none; margin:25px 25px; float:left;}
 
 /* /portafolio*/
+
+/*servicios*/
+.globe_services{width:916px; height:267px;  background:url(/medios/img/globo_servicios.png) no-repeat; margin:25px auto; display:block;}
+.globe_services #title{margin:85px 0 0 50px; font-size:14pt; float:left; color:#27AAE1; }
+.globe_services #description{margin:20px 0 0 50px; float:left; width:820px; height:150px; overflow:auto; color:#58595B; font-size:12pt;}
+#content #block_left{width:425px; height:500px; margin-left:60px; float:left;}
+#content #block_right{width:425px; height:500px; float:left;}
+#content #globo_footer{width:931px; height:82px; margin:0px auto; background:url(/medios/img/globo_bottom_servicios.png); float:left; margin:0 0 0 15px;}
+/* /servicios*/
 
 #footer{
 	float:left;
