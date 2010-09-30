@@ -1,5 +1,12 @@
-$(document).ready(function(){
+$("document").ready(function(){
     $('.project_button').click(function(){
-        show_project_description($(this).attr('id'));
+        if($('.globe_portfolio').html()!=null){
+            $('.globe_portfolio').slideUp('slow',function(){
+                $('.globe_portfolio').remove();
+            });
+        }
+        else{
+            project_box($(this).attr('id'),$(this).attr('position'),$(this).parent());
+        }
     });
 });

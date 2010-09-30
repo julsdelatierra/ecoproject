@@ -13,23 +13,15 @@ hendrerit arcu.</div>
 {%block content%}
 
 <div id="headline">A QUIENES LES HEMOS DICHO <span>COMO</span></div>
-
     
-<ul>
-    {%for project in projects%}
-    <li class="project_button">
-        <img src="{{MEDIA_URL}}{{project.image}}" alt="" />
-    </li>
-    {%endfor%}
+{%for project in projects%}
+    <ul>
+        {%for p in project%}
+            <li id="{{p.id}}" class="project_button" position="{{forloop.counter}}">
+                <img src="{{MEDIA_URL}}{{p.image}}" alt="" />
+            </li>
+        {%endfor%}
     </ul>
-    
-<div class="globe_portfolio">
-<div class="arrow_01"></div>
-
-<img id="logo" src="{{MEDIA_URL}}upload/logo01_3.png" />
-<div id="title">NUEVA TECNOLOGIA EN EL DESARROLLO DE SOFTWARE [2010]</div>
-<div id="description">Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum.</div>
-
-</div>    
+{%endfor%}
 
 {%endblock%}

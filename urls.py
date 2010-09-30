@@ -1,6 +1,6 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
-from website.views import inicio, empresa, servicios, portafolio, faq, contacto
+from website.views import inicio, empresa, servicios, portafolio, faq, contacto, projectDescription
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -15,10 +15,13 @@ urlpatterns = patterns('',
     (r'^portafolio/$',portafolio),
     (r'^faq/$',faq),
     (r'^contacto/$',contacto),
+    
+    #ajax communication
+    (r'^projectdescription/$',projectDescription),
     # Example:
     # (r'^ecoproject/', include('ecoproject.foo.urls')),
 
-    # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
+    # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
