@@ -47,8 +47,8 @@ a:hover{text-decoration:underline;}
 #content{width:960px; float:left;}
 
 /*Inicio*/
-#video_container{width:560px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
-#video_container .video{width:560px; height:330px; background:#000;}
+#video_container{width:550px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
+#video_container .video{width:550px; height:330px; background:#000;}
 
 #globo_inicio{width:572px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 35px 0 0;}
 #globo_inicio #big_text{width:572px; height:191px; float:right; background:(/medios/img/globo_inicio.png) no-repeat; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
