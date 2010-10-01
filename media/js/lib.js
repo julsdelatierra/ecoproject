@@ -12,7 +12,7 @@ project_box = function(id,position,parent){
         success:function(data){
             globe = create_globe_project(data['name'],data['year'],data['description'],data['image'],position);
             parent.append(globe);
-            $('.globe_portfolio').slideDown('slow');
+            $('#globe_portfolio').slideDown('slow');
         }
     });
 };
