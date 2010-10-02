@@ -2,13 +2,70 @@
 {%block title%}ECO Consultores - FAQ - Preguntas Frecuentes{%endblock%}
 
 {%block header%}
-
+<div id="head_medium">
+<div id="title">Centro de preguntas frecuentes</div>
+</div>
 {%endblock%}
 
 {%block content%}
+<div id="main_text">
+Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum.
+</div>
+
+<div id="questions_list">
+<div id="top">Titulo</div>
+<div id="middle">
     <ul>
-    {%for t in topics%}
-        <li id="{{t.id}}">{{t.title}}</li>
+    {%for topic in topics%}
+        <li id="{{topic.id}}">{{topic.title}}</li>
     {%endfor%}
     </ul>
+</div>
+<div id="bottom"></div>
+
+
+    
+</div>
+
+<div id="answers_list">
+<div id="top"></div>
+
+<div id="middle">
+	<div class="question_button">Preguuuuuuuntame caon 1</div>
+    <div class="question_button">Preguuuuuuuntame caon 2</div>
+  	<div class="question_button">Preguuuuuuuntame caon 3</div>
+    <div class="answer">Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna semper bibendum.</div>
+    <div id="globe_faq_form">
+    <div id="form_title">¿Aún con dudas?, escríbenos.</div>
+      <form id="form1" name="form1" method="post" action="">     <table width="278" border="0">
+  <tr>
+    <td width="144"><label for="name"></label>
+      <input type="text" name="name" id="name" /></td>
+    <td colspan="2" rowspan="2"><label for="comments">
+      <textarea name="comments" id="comments" cols="5" rows="5"></textarea>
+    </label></td>
+    </tr>
+  <tr>
+    <td><label for="email"></label>
+      <input type="text" name="email" id="email" /></td>
+    </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td width="38">&nbsp;</td>
+    <td width="111" height="35"><div id="send_button">Enviar</div></td>
+  </tr>
+</table>
+      </form>
+ 
+</div>
+    
+	<div class="question_button">Preguuuuuuuntame caon 4</div>
+    <div class="question_button">Preguuuuuuuntame caon 5</div>
+  	<div class="question_button">Preguuuuuuuntame caon 6</div>    
+    
+</div>
+
+<div id="bottom"></div>
+</div>
+
 {%endblock%}
