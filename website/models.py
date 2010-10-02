@@ -1,9 +1,12 @@
+#!/usr/local/bin/python
+# -*- coding: utf-8 -*-
+
 from django.db import models
 
 # Create your models here.
 class Project(models.Model):
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=200, verbose_name='Name')
+    name = models.CharField(max_length=200)
     image = models.ImageField(upload_to='upload/')
     year = models.CharField(max_length=4)
     description = models.TextField()
@@ -13,7 +16,7 @@ class Project(models.Model):
     
 class Topic(models.Model):
     id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=100, verbose_name='Titulo')
+    title = models.CharField(max_length=100)
     
     def __unicode__(self):
         return unicode(self.title)
