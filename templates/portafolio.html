@@ -15,7 +15,7 @@ hendrerit arcu.</div>
 <div id="headline">A QUIENES LES HEMOS DICHO <span>COMO</span></div>
     
 {%for project in projects%}
-    <ul>
+    <ul position="{{forloop.counter}}">
         {%for p in project%}
             <li id="{{p.id}}" class="project_button" position="{{forloop.counter}}">
                 <img src="{{MEDIA_URL}}{{p.image}}" alt="" />

@@ -2,6 +2,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.template.context import RequestContext
+from django.utils.translation import ugettext as _
 
 def inicio(request):
     return render_to_response('inicio.html',{},
@@ -36,7 +37,7 @@ def portafolio(request):
 def projectDescription(request):
     from models import Project
     from django.utils import simplejson
-    print request.POST
+    print request
     project = Project.objects.get(id__exact=request.POST['id'])
     result = {'image':project.image.url,'name':project.name,
               'description':project.description,'year':project.year}

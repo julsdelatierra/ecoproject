@@ -75,7 +75,7 @@ a:hover{text-decoration:underline;}
 #globe_portfolio #title{margin:35px 0 0 50px; font-size:14pt; float:left; color:#27AAE1; }
 #globe_portfolio #description{margin:20px 0 0 50px; float:left; width:700px; height:150px; overflow:auto; color:#58595B; font-size:12pt;}
 
-li.project_button{list-style:none; margin:25px 25px; float:left;}
+li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;}
 
 /* /portafolio*/
 

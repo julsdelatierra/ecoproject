@@ -1,3 +1,6 @@
+#!/usr/local/bin/python
+# -*- coding: utf-8 -*-
+
 # Django settings for ecoproject project.
 import os
 PATH = os.getcwd()+os.sep
@@ -34,7 +37,21 @@ TIME_ZONE = 'America/Merida'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'es-mx'
+LANGUAGE_CODE = 'es'
+
+_ = lambda s:s
+
+# Languages used for this project
+LANGUAGES = {
+    'es':_(u'Español'),
+    'en':_(u'Inglés'),
+}
+
+import re
+LOCALE_INDEPENDENT_PATHS = (
+    re.compile('/projectdescription/'),
+    re.compile('/medios/'),
+)
 
 SITE_ID = 1
 
@@ -71,11 +88,13 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
+    'localeurl.middleware.LocaleURLMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'ecoproject.urls'
@@ -96,10 +115,12 @@ INSTALLED_APPS = (
     'ecoproject.website',
     'ecoproject.admin',
     'django.contrib.admin',
+    'localeurl',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'website.context_processors.default',
+    'django.core.context_processors.request',
     'django.core.context_processors.auth',
     'django.core.context_processors.i18n',
     'django.core.context_processors.media',

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>{%block title%}{%endblock%}</title>
@@ -13,12 +13,14 @@
 <div id="menu_container">
 <a href="/"><div id="boton_index_logo"></div></a>
 	<div id="language_switch_button">
-    <a href="#">Switch to English</a>
+    {% load localeurl_tags %}
+    {%load i18n%}
+    <a href="{{request.path|chlocale:'en'}}">{%trans 'Switch to English'%}</a>
     </div>
     <div id="menu">
     <ul>
-    	<li class="item_menu_inicio"><a href="/empresa/">Empresa</a></li>
-        <li class="item_menu"><a href="/servicios/">Servicios</a></li>
+    	<li class="item_menu_inicio"><a href="/empresa/">{%trans 'Empresa'%}</a></li>
+        <li class="item_menu"><a href="/servicios/">{%trans 'Servicios'%}</a></li>
         <li class="item_menu"><a href="/portafolio/">Portafolio</a></li>
         <li class="item_menu"><a href="/faq/">FAQ</a></li>
         <li class="item_menu_final"><a href="/contacto/">Contactenos</a></li>
