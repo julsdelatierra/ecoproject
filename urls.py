@@ -1,6 +1,7 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
-from website.views import inicio, empresa, servicios, portafolio, faq, contacto, projectDescription
+from website import views as website
+#from website.views import inicio, empresa, servicios, portafolio, faq, contacto, projectDescription
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
@@ -8,19 +9,21 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^medios/(?P<path>.*)$', 'django.views.static.serve',
      {'document_root': settings.STATIC, 'show_indexes':False}),
-    (r'^$',inicio),
-    (r'^empresa/$',empresa),
-    (r'^servicios/$',servicios),
-    (r'^servicios/$',servicios),
-    (r'^portafolio/$',portafolio),
-    (r'^faq/$',faq),
-    (r'^contacto/$',contacto),
+    (r'^$',website.inicio),
+    (r'^empresa/$',website.empresa),
+    (r'^servicios/$',website.servicios),
+    (r'^servicios/$',website.servicios),
+    (r'^portafolio/$',website.portafolio),
+    (r'^faq/$',website.faq),
+    (r'^contacto/$',website.contacto),
     
     # i18n
     #(r'^i18n/', include('django.conf.urls.i18n')),
     
     #ajax communication
-    (r'^projectdescription/$',projectDescription),
+    (r'^projectdescription/$',website.projectDescription),
+    (r'^questionslist/$',website.questionsList),
+    (r'^answer/$',website.answer),
     # Example:
     # (r'^ecoproject/', include('ecoproject.foo.urls')),
 
