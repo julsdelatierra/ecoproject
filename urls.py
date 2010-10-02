@@ -16,6 +16,9 @@ urlpatterns = patterns('',
     (r'^faq/$',faq),
     (r'^contacto/$',contacto),
     
+    # i18n
+    #(r'^i18n/', include('django.conf.urls.i18n')),
+    
     #ajax communication
     (r'^projectdescription/$',projectDescription),
     # Example:
