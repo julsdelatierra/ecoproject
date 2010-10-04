@@ -64,19 +64,28 @@
 	
 
 	/*---- CONTENT HEADLINES ----*/
-	#content #headline{color:#6D6E71; text-align:center; font-size:38pt;}
+	#content #headline{color:#6D6E71; text-align:center; font-size:38pt; margin-top:18px;}
 	#content #headline span{color:#56AC41;}
 	/*--- /CONTENT HEADLINES ----*/
 	
 	/*---- FOOTER ----*/
 	#footer{float:left;	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom; height:76px;  width: 100%;}
 	#footer #arrow_footer{background:url(/medios/img/arrow_up_footer.png) no-repeat; background-position:862px 10px; width:960px; height:50px; margin:0px auto;}
-	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0 -0.1em #333;}
+	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0 -0.1em #1C5100;}
 	#year{float:right;}
 	/*---- /FOOTER ----*/
 	
 	
 /*---- /ALL CONTENT ----*/
+
+
+/*//////////////////////////////[ EMPRESA ]//////////////////////////////////////*/
+#head_big #title_company{width:572px; color:#FFF; font-size:35pt; float:left; margin:77px 0 0 58px ; text-align:left;}
+#head_big #subtitle_company{width:572px; color:#231F20; font-size:14pt; float:left; text-align:left; margin:0 0 0 58px ;}
+#content #company_philosophy{width:490px; height:261px; float:left; margin-left:70px; color:#58595B;}
+#content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
+#globe_company{width:318px; height:323px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:0 0 50px 77px;}
+/*------------------------------ /EMPRESA ---------------------------------------*/
 
 
 /*//////////////////////////////[ INICIO ]//////////////////////////////////////*/
@@ -149,7 +158,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 #answers_list{width:627px; float:left; margin-bottom:50px;}
 #answers_list #top{width:627px; height:14px; background:url(/medios/img/answers_top_bg.png) no-repeat; float:left;}
-#answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left;}
+#answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left; padding-bottom:15px;}
 #answers_list .middle .question_button{width:581px; height:28px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:10px 0 0 12px; margin-left:12px;}
 #answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px;} 
 
