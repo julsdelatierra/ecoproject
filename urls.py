@@ -18,13 +18,14 @@ urlpatterns = patterns('',
     (r'^contacto/$',website.contacto),
     
     # i18n
-    #(r'^i18n/', include('django.conf.urls.i18n')),
+    (r'^i18n/', include('django.conf.urls.i18n')),
     
     #ajax communication
     (r'^projectdescription/$',website.projectDescription),
     (r'^questionslist/$',website.questionsList),
     (r'^answer/$',website.answer),
-    (r'^questioncontact/',website.questionContact),
+    (r'^questioncontact/$',website.questionContact),
+    (r'^switchlanguage/$',website.switchLanguage),
     # Example:
     # (r'^ecoproject/', include('ecoproject.foo.urls')),
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-02 00:22-0500\n"
+"POT-Creation-Date: 2010-10-04 00:06-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,10 +25,6 @@ msgstr "Spanish"
 msgid "Inglés"
 msgstr "English"
 
-#: templates/base.html:18
-msgid "Switch to English"
-msgstr "Cambiar a español"
-
 #: templates/base.html:22
 msgid "Empresa"
 msgstr "Company"
@@ -36,3 +32,57 @@ msgstr "Company"
 #: templates/base.html:23
 msgid "Servicios"
 msgstr "Services"
+
+#: templates/base.html:24
+msgid "Portafolio"
+msgstr "Portfolio"
+
+#: templates/base.html:26
+msgid "Contactenos"
+msgstr "Contact us"
+
+#: templates/faq.html:7
+msgid "Centro de preguntas frecuentes"
+msgstr "Frequent Questions Asked Center"
+
+#: templates/faq.html:13
+msgid ""
+"\n"
+"Sed nec diam eu diam mattis viverra.\n"
+"Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris,\n"
+"quis sollicitudin sapien justo in libero.\n"
+"Vestibulum mollis mauris enim.\n"
+"Morbi euismod magna ac lorem rutrum elementum.\n"
+msgstr ""
+
+#: templates/faq.html:23
+msgid "Titulo"
+msgstr "Title"
+
+#: templates/portafolio.html:8
+msgid "Portafolio in di mauris. Vivamus hendrerit arcu."
+msgstr ""
+
+#: templates/portafolio.html:11 templates/servicios.html:10
+msgid "Quisque commodo hendrerit lorem quis egestas. Maecenas quis."
+msgstr ""
+
+#: templates/portafolio.html:19
+msgid "A QUIENES LES HEMOS DICHO"
+msgstr ""
+
+#: templates/portafolio.html:19
+msgid "COMO"
+msgstr ""
+
+#: templates/servicios.html:7
+msgid "Servicios in di mauris. Vivamus hendrerit arcu."
+msgstr ""
+
+#: templates/servicios.html:18
+msgid "METODOLOGÍA:"
+msgstr ""
+
+#: templates/servicios.html:18
+msgid "TE DECIMOS CÓMO"
+msgstr ""

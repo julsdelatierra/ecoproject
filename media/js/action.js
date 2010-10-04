@@ -80,4 +80,15 @@ $("document").ready(function(){
         }
     });
     
+    $('#switch_language').click(function(){
+        console.log('click');
+        $.ajax({
+            url:'/switchlanguage/',
+            type:'POST',
+            success:function(){
+                console.log('fuck');
+            }
+        });
+    });
+    
 });

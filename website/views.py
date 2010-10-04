@@ -1,9 +1,8 @@
 # Create your views here.
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.template.context import RequestContext
 from django.utils.translation import ugettext as _
-from django.conf import settings
 
 def inicio(request):
     return render_to_response('inicio.html',{},
@@ -88,5 +87,22 @@ def questionContact(request):
         from django.core.mail import send_mail
         #send_mail(subject,message,sender,['contacto@ecoconsultores.com.mx'])
         return HttpResponse('ready')
+    else:
+        return HttpResponse('Invalid access method')
+
+def switchLanguage(request):
+    if request.POST:
+        url = str(request.META['HTTP_REFERER'])
+        next = url.split('/')[len(url.split('/'))-2]
+        from django.conf import settings
+        if settings.LANGUAGE_CODE == 'es':
+            settings.LANGUAGE_CODE = 'en'
+        else:
+            settings.LANGUAGE_CODE = 'es'
+        if next == 'es':
+            next = 'en'
+        if next == 'en':
+            next = 'es'
+        return redirect('/'+next+'/')
     else:
         return HttpResponse('Invalid access method')

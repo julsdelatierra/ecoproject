@@ -9,15 +9,14 @@
         <script type="text/javascript" src="{{MEDIA_URL}}js/action.js"></script>
     </head>
     <body>
+        {%load i18n%}
         <div id="container">
         <div id="menu_container">
+        <form id="language_switch_button" method="post" action="/switchlanguage/">
+            {% csrf_token %}<input type="submit" id="switch_language" value="Switch to English"/>
+        </form>
         <a href="/"><div id="boton_index_logo"></div></a>
-        	<div id="language_switch_button">
-            {% load localeurl_tags %}
-            {%load i18n%}
-            <a id="switch_language" href="{{request.path|chlocale:'en'}}" name="">Switch to English</a>
-            </div>
-            <div id="menu">
+        <div id="menu">
             <ul>
             	<li class="item_menu_inicio"><a href="/empresa/">{%trans 'Empresa'%}</a></li>
                 <li class="item_menu"><a href="/servicios/">{%trans 'Servicios'%}</a></li>
@@ -25,7 +24,7 @@
                 <li class="item_menu"><a href="/faq/">FAQ</a></li>
                 <li class="item_menu_final"><a href="/contacto/">{%trans 'Contactenos'%}</a></li>
             </ul>
-            </div>
+        </div>
         </div>
             <div id="header">{%block header%}{%endblock%}</div>
         <div id="content">{%block content%}{%endblock%}</div>

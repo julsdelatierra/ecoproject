@@ -54,6 +54,7 @@ LOCALE_INDEPENDENT_PATHS = (
     re.compile('/questionslist/'),
     re.compile('/answer/'),
     re.compile('/questioncontact/'),
+    re.compile('/switchlanguage/'),
 )
 
 SITE_ID = 1
@@ -97,7 +98,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'ecoproject.urls'
@@ -118,13 +118,11 @@ INSTALLED_APPS = (
     'ecoproject.website',
     'ecoproject.admin',
     'django.contrib.admin',
-    'localeurl',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'website.context_processors.default',
     'django.core.context_processors.request',
     'django.core.context_processors.auth',
-    'django.core.context_processors.i18n',
     'django.core.context_processors.media',
 )

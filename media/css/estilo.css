@@ -29,7 +29,7 @@
 	#container{width:960px; margin:0px auto;}
 	#menu_container{width:960px; height:145px; float:left; background:url(/medios/img/menu_bg.png)}
 	#language_switch_button{width:960px; height:40px; float:right;}
-	#language_switch_button a{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:italic;}
+	#language_switch_button input{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:italic; background: none; border:none;}
 
 	#menu{float:right; margin:14px 40px 0 0; text-decoration:none;}
 	#menu a:hover{text-decoration:none;}
