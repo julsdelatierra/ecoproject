@@ -43,14 +43,17 @@ _ = lambda s:s
 
 # Languages used for this project
 LANGUAGES = {
-    'es':_(u'Español'),
-    'en':_(u'Inglés'),
+    'es':_('Español'),
+    'en':_('Inglés'),
 }
 
 import re
 LOCALE_INDEPENDENT_PATHS = (
     re.compile('/projectdescription/'),
     re.compile('/medios/'),
+    re.compile('/questionslist/'),
+    re.compile('/answer/'),
+    re.compile('/questioncontact/'),
 )
 
 SITE_ID = 1

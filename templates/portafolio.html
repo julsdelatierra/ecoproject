@@ -1,18 +1,22 @@
 {%extends "base.html"%}
 {%block title%}ECO Consultores - Portafolio{%endblock%}
 {%block header%}
+{%load i18n%}
 
 <div id="head_big">
-<div id="title">Portafolio in di mauris. Vivamus
-hendrerit arcu.</div>
-<div id="subtitle">Quisque commodo hendrerit lorem quis egestas. Maecenas quis.</div>
+<div id="title">
+    {%trans 'Portafolio in di mauris. Vivamus hendrerit arcu.'%}
+</div>
+<div id="subtitle">
+    {%trans 'Quisque commodo hendrerit lorem quis egestas. Maecenas quis.'%}
+</div>
 </div>
 
 {%endblock%}
 
 {%block content%}
 
-<div id="headline">A QUIENES LES HEMOS DICHO <span>COMO</span></div>
+<div id="headline">{%trans 'A QUIENES LES HEMOS DICHO'%} <span>{%trans 'COMO'%}</span></div>
     
 {%for project in projects%}
     <ul position="{{forloop.counter}}">

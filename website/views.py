@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.template.context import RequestContext
 from django.utils.translation import ugettext as _
+from django.conf import settings
 
 def inicio(request):
     return render_to_response('inicio.html',{},
@@ -35,13 +36,16 @@ def portafolio(request):
                               context_instance=RequestContext(request))
     
 def projectDescription(request):
-    from models import Project
-    from django.utils import simplejson
-    print request
-    project = Project.objects.get(id__exact=request.POST['projectId'])
-    result = {'image':project.image.url,'name':project.name,
-              'description':project.description,'year':project.year}
-    return HttpResponse(simplejson.dumps(result),mimetype='application/json')
+    if request.is_ajax():
+        from models import Project
+        from django.utils import simplejson
+        project = Project.objects.get(id__exact=request.POST['projectId'])
+        result = {'image':project.image.url,'name':project.name,
+                  'description':project.description,'year':project.year}
+        return HttpResponse(simplejson.dumps(result),
+                            mimetype='application/json')
+    else:
+        return HttpResponse('Invalid access method')
     
 def faq(request):
     from models import Topic
@@ -58,15 +62,31 @@ def questionsList(request):
         quest_array = []
         for question in questions:
             quest_array.append({'id':question.id,'text':question.text})
-    return HttpResponse(simplejson.dumps(quest_array),
-                        mimetype='application/json')
+        return HttpResponse(simplejson.dumps(quest_array),
+                            mimetype='application/json')
+    else:
+        return HttpResponse('Invalid access method')
 
 def answer(request):
     if request.is_ajax():
         from models import Answer
         answer = Answer.objects.get(question__exact=request.POST['questionId'])
-    return HttpResponse(answer)
+        return HttpResponse(answer)
+    else:
+        return HttpResponse('Invalid access method')
     
 def contacto(request):
     return render_to_response('contacto.html',{},
                               context_instance=RequestContext(request))
+
+def questionContact(request):
+    if request.is_ajax():
+        print request.POST
+        subject = request.POST['question']
+        message = request.POST['comment']
+        sender = request.POST['email']
+        from django.core.mail import send_mail
+        #send_mail(subject,message,sender,['contacto@ecoconsultores.com.mx'])
+        return HttpResponse('ready')
+    else:
+        return HttpResponse('Invalid access method')

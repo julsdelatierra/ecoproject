@@ -1,18 +1,21 @@
 {%extends "base.html"%}
 {%block title%}ECO Consultores - Servicios{%endblock%}
 {%block header%}
-
+{%load i18n%}
 <div id="head_big">
-<div id="title">Servicios in di mauris. Vivamus
-hendrerit arcu.</div>
-<div id="subtitle">Quisque commodo hendrerit lorem quis egestas. Maecenas quis.</div>
+  <div id="title">
+    {%trans 'Servicios in di mauris. Vivamus hendrerit arcu.'%}
+  </div>
+  <div id="subtitle">
+    {%trans 'Quisque commodo hendrerit lorem quis egestas. Maecenas quis.'%}
+  </div>
 </div>
 
 {%endblock%}
 
 {%block content%}
 
-<div id="headline"><span>METODOLOGÍA:</span> TE DECIMOS CÓMO</div>
+<div id="headline"><span>{%trans 'METODOLOGÍA:'%}</span> {%trans 'TE DECIMOS CÓMO'%}</div>
 
 <div class="globe_services">
 <div id="text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. <span>In condimentum facilisis porta. Sed nec.</span></div>

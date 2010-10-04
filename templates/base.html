@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>{%block title%}{%endblock%}</title>
-<link href="{{MEDIA_URL}}css/estilo.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="{{MEDIA_URL}}js/jquery.js"></script>
-<script type="text/javascript" src="{{MEDIA_URL}}js/lib.js"></script>
-<script type="text/javascript" src="{{MEDIA_URL}}js/action.js"></script>
-</head>
-<body>
-<div id="container">
-<div id="menu_container">
-<a href="/"><div id="boton_index_logo"></div></a>
-	<div id="language_switch_button">
-    {% load localeurl_tags %}
-    {%load i18n%}
-    <a href="{{request.path|chlocale:'en'}}">{%trans 'Switch to English'%}</a>
-    </div>
-    <div id="menu">
-    <ul>
-    	<li class="item_menu_inicio"><a href="/empresa/">{%trans 'Empresa'%}</a></li>
-        <li class="item_menu"><a href="/servicios/">{%trans 'Servicios'%}</a></li>
-        <li class="item_menu"><a href="/portafolio/">Portafolio</a></li>
-        <li class="item_menu"><a href="/faq/">FAQ</a></li>
-        <li class="item_menu_final"><a href="/contacto/">Contactenos</a></li>
-    </ul>
-    </div>
-</div>
-<div id="header">{%block header%}{%endblock%}</div>
-<div id="content">{%block content%}{%endblock%}</div>
-
-</div>
-
-<div id="footer">
-	<div id="arrow_footer"></div>
-		<div id="footer_content">
-		<span id="address">Avenida 56-A # 236 x 58-A y 60, Col. Alcalá Martín - Mérida, YUC, México 97050</span>
-		<span id="year">ECO Consultores, {{year}}  ®</span>
-	</div>
-</div>
-
-</body>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{%block title%}{%endblock%}</title>
+        <link href="{{MEDIA_URL}}css/estilo.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.js"></script>
+        <script type="text/javascript" src="{{MEDIA_URL}}js/lib.js"></script>
+        <script type="text/javascript" src="{{MEDIA_URL}}js/action.js"></script>
+    </head>
+    <body>
+        <div id="container">
+        <div id="menu_container">
+        <a href="/"><div id="boton_index_logo"></div></a>
+        	<div id="language_switch_button">
+            {% load localeurl_tags %}
+            {%load i18n%}
+            <a id="switch_language" href="{{request.path|chlocale:'en'}}" name="">Switch to English</a>
+            </div>
+            <div id="menu">
+            <ul>
+            	<li class="item_menu_inicio"><a href="/empresa/">{%trans 'Empresa'%}</a></li>
+                <li class="item_menu"><a href="/servicios/">{%trans 'Servicios'%}</a></li>
+                <li class="item_menu"><a href="/portafolio/">{%trans 'Portafolio'%}</a></li>
+                <li class="item_menu"><a href="/faq/">FAQ</a></li>
+                <li class="item_menu_final"><a href="/contacto/">{%trans 'Contactenos'%}</a></li>
+            </ul>
+            </div>
+        </div>
+            <div id="header">{%block header%}{%endblock%}</div>
+        <div id="content">{%block content%}{%endblock%}</div>
+        
+        </div>
+        
+        <div id="footer">
+        	<div id="arrow_footer"></div>
+        		<div id="footer_content">
+        		<span id="address">Avenida 56-A # 236 x 58-A y 60, Col. Alcalá Martín - Mérida, YUC, México 97050</span>
+        		<span id="year">ECO Consultores, {{year}}  ®</span>
+        	</div>
+        </div>
+        
+    </body>
 </html>
