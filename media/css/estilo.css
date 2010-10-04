@@ -46,7 +46,9 @@
 
 	#header{width:960px; float:left;}
 	#content{width:960px; float:left;}
-
+	
+	#content .main_text{width:760px; height:86px; float:left; text-align:justify; padding:15px 100px; font-size:12pt; color:#58595B;}
+	
 	/*---- BIG HEADS ----*/
 	#head_big{width:960px; height:284px; float:left; background:url(/medios/img/header_big_bg.png) no-repeat; margin:0 0 25px 0;}
 	#head_big #title{width:572px; color:#FFF; font-size:35pt; float:right; margin:77px 10px 0 0; text-align:left;}
@@ -69,9 +71,10 @@
 	/*---- FOOTER ----*/
 	#footer{float:left;	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom; height:76px;  width: 100%;}
 	#footer #arrow_footer{background:url(/medios/img/arrow_up_footer.png) no-repeat; background-position:862px 10px; width:960px; height:50px; margin:0px auto;}
-	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0.1em 0.1em #333;}
+	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0 -0.1em #333;}
 	#year{float:right;}
 	/*---- /FOOTER ----*/
+	
 	
 /*---- /ALL CONTENT ----*/
 
@@ -132,8 +135,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 
 
-/*//////////////////////////////[ FAQ ]//////////////////////////////////////*/
-#main_text{width:760px; height:86px; float:left; text-align:justify; padding:15px 100px; font-size:12pt;}
+/*////////////////////////////////[ FAQ ]//////////////////////////////////////*/
 
 #questions_list{width:320px; margin-right:12px; float:left;}
 #questions_list #top{width:320px; height:39px; margin-right:12px; float:left; background:url(/medios/img/questions_top_bg.png) no-repeat; text-align:center; color:#56AC41; font-size:20pt; padding:10px 0 0 0;}
@@ -155,18 +157,49 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 .question_button{cursor: pointer;}
 
-#globe_faq_form{width:603px; margin:12px 0 12px 12px; background:url(/medios/img/globe_faq.png) no-repeat; float:left;}
+#globe_faq_form{width:603px; height:194px; margin:12px 0 12px 12px; background:url(/medios/img/globe_faq.png) no-repeat; float:left;}
 #globe_faq_form #form_title{color:#27AAE1; font-size:12pt; text-align:center; width:100%; margin:38px 0 12px 0;}
 #globe_faq_form table{margin-left:12px;}
-#globe_faq_form #send_button{width:111px; height:35px; color:#FFF; font-size:11pt; background:url(/medios/img/send_button.png) no-repeat;}
+
+#globe_faq_form input[type=button]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; margin:-7px 0 0 -5px;}
+#globe_faq_form input[type=button]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
+
 #globe_faq_form input{width:266px; height:28px; background:url(/medios/img/input_faq_bg.png) no-repeat; border:none; color:#A3A2A2; padding:3px; font-size:12pt;}
 #globe_faq_form textarea{width:279px; height:77px; margin-left:12px; background:url(/medios/img/textarea_faq_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none;}
-
-
 
 /*----------------------------- /SERVICIOS ---------------------------------------*/
 
 
-/*---------------------------- /ESPECIALES ---------------------------------------*/
+/*////////////////////////////////[ CONTACTO ]//////////////////////////////////////*/
+#globe_contact_form{width:917px; height:290px;  margin:0px auto; background:url(/medios/img/globo_contacto.png) no-repeat; display:block; overflow:hidden;}
+#globe_contact_form table{margin:52px 0 0 21px;}
+#globe_contact_form input[type=submit]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none;}
+#globe_contact_form input[type=submit]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
+#globe_contact_form input{width:277px; height:27px; background:url(/medios/img/input_contacto_bg.png) no-repeat; border:none; color:#A3A2A2; padding:5px; font-size:12pt;}
+#globe_contact_form textarea{width:869px; height:134px; background:url(/medios/img/textarea_contacto_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none;}
+
+#contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; margin-bottom:25px;}
+#contact_data #data{width:422px; height:126px; font-size:11pt; float:left; margin-left:15px; background:url(/medios/img/contact_data_middle_border.png) right no-repeat; color:#6D6E71;}
+#contact_data #google_button a{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom.png) no-repeat; display:block; color:#31B3D0;}
+#contact_data #google_button a:hover{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom_over.png) no-repeat; display:block; color:#31B3D0;}
+/*-------------------------------- /CONTACTO ---------------------------------------*/
+
+
+
+
+/*////////////////////////////[ ESPECIALES ]//////////////////////////////////////*/
 .error{background:red; color:white; font-weight:bold; margin: 5px 0 5px 0}
 /*---------------------------- /ESPECIALES ---------------------------------------*/
+
+
+
+/*/////////////////////////////////[ PIMP MY WEB ]/////////////////////////////////*/
+/* selector compatible con Firefox */
+::-moz-selection{
+    background: #D4F699; /* color de fondo */
+}
+/* selector compatible con Safari */
+::selection{
+    background: #D4F699; /* color de fondo */
+}
+/*--------------------------------- /PIMP MY WEB ---------------------------------*/

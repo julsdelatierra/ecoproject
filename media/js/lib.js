@@ -73,7 +73,7 @@ write_answer_and_dialog = function(sender,data){
             <tr>\
                 <td>&nbsp;</td>\
                 <td width="38">&nbsp;</td>\
-                <td width="111">\
+                <td align="right" width="111">\
                     <input type="button" id="send_button" value="Enviar" />\
                 </td>\
             </tr>\
