@@ -46,6 +46,17 @@
 /*---- /Fuente Aller Light  ----*/
 
 
+/*---- Fuente Aller Italica ----*/
+/* USAR: font-family: 'AllerItalic', sans-serif; */
+@font-face {
+	font-family: 'AllerItalic';
+	src: url('/medios/fonts/aller_it-webfont.eot');
+	src: local('☺'), url('/medios/fonts/aller_it-webfont.woff') format('woff'), url('/medios/fonts/aller_it-webfont.ttf') format('truetype'), url('/medios/fonts/aller_it-webfont.svg#webfont0pY7Dwdw') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*---- /Fuente Aller Italica  ----*/
+
 
 	body{background:url(/medios/img/fondo.jpg) fixed; margin:0px auto;}
 
@@ -126,10 +137,10 @@
 #video_container .video{width:550px; height:330px; background:#000;}
 
 #globo_inicio{width:550px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 50px 0 0;}
-#globo_inicio #big_text{float:right; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
+#globo_inicio #big_text{width:100%; float:right; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
 #globo_inicio #tiny_text{width:100%; float:right; font-size:14pt; color:#6D6E71; float:right; text-align:center; font-family: 'AllerRegular', sans-serif;}
 #parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 15px 0; font-family: 'AllerLightRegular', sans-serif;}
-#parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; font-style:oblique; color:#000; display:block; font-family: 'AllerRegular', sans-serif;}
+#parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; color:#000; display:block; font-family: 'AllerItalic', sans-serif;}
 /*----------------------------- /INICIO ---------------------------------------*/
 
 
