@@ -146,11 +146,7 @@
 
 /*//////////////////////////////[ PORTAFOLIO ]//////////////////////////////////////*/
 #globe_portfolio{width:917px; height:224px;  background:url(/medios/img/globo_portafolio.png) no-repeat 0 31px; margin:25px auto; display:block; overflow:hidden;}
-#globe_portfolio .arrow_01{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png)  no-repeat 75px 0; display:block; float:left;}
-#globe_portfolio .arrow_02{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 245px 0; display:block; float:left;}
-#globe_portfolio .arrow_03{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 415px 0; display:block; float:left;}
-#globe_portfolio .arrow_04{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 585px 0; display:block; float:left;}
-#globe_portfolio .arrow_05{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 755px 0; display:block; float:left;}
+#globe_portfolio .arrow{width:917px; height:32px; display:block; float:left;}
 
 #globe_portfolio #logo{margin:35px 0 0 45px; float:left;}
 #globe_portfolio #title{margin:35px 0 0 50px; font-size:14pt; float:left; color:#27AAE1;}
