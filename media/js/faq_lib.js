@@ -1,5 +1,5 @@
 write_question = function(id,text){
-    question = '<span id="'+id+'" class="question_button">'+text+'</span>';
+    var question = '<span id="'+id+'" class="question_button">'+text+'</span>';
     $('#questions_container').append(question);
 };
 
@@ -20,8 +20,8 @@ questions_box = function(topicId){
 };
 
 write_answer_and_dialog = function(sender,data){
-    content = '<span id="answer+'+$(sender).attr('id')+'" class="answer" style="display:none;">'+data+'</span>'
-    DIALOG = '\
+    var content = '<span id="answer+'+$(sender).attr('id')+'" class="answer" style="display:none;">'+data+'</span>'
+    var DIALOG = '\
     <div id="globe_faq_form" style="display:none;">\
         <div id="form_title">&iquest;A&uacute;n con dudas?, escr&iacute;benos.</div>\
         <table width="278" border="0">\
