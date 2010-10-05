@@ -66,7 +66,7 @@ $("document").ready(function(){
             question = null;
         }
         else{
-            $('<div class="error" style="display:none">Verifica tu correo</div>').insertAfter('#form_title');
+            $('#error_area').html('<div class="error" style="display:none">Verifica tu correo</div>');
             $('.error').slideDown('slow').delay(2000).slideUp('slow');
         }
     });

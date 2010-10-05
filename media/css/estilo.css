@@ -238,7 +238,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 
 /*////////////////////////////[ ESPECIALES ]//////////////////////////////////////*/
-.error{background:red; color:white; font-weight:bold; margin: 5px 0 5px 0}
+.error{background:url(/medios/img/error_back.png) no-repeat; color:white; font-weight:bold; margin: 5px 0 5px 0}
 /*---------------------------- /ESPECIALES ---------------------------------------*/
 
 
