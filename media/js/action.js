@@ -19,13 +19,13 @@ $("document").ready(function(){
         alert('FUCK');
     }
     
-    console.log(navigator.userAgent);
+    /*console.log(navigator.userAgent);
     console.log(navigator.appCodeName);
     console.log(navigator.appName);
     console.log(navigator.platform);
     console.log(navigator.product);
     console.log(navigator.productSub);
-    console.log(navigator.vendor);
+    console.log(navigator.vendor);*/
     
     /*class="project_button" clicked*/
     $('.project_button').click(function(){
