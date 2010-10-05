@@ -41,7 +41,7 @@ update_arrow_globe_project = function(position){
 };
 
 project_data_format = function(name,year,description,image){
-    title = name+" ["+year+"]";
+    var title = name+" ["+year+"]";
     return '<div id="hide" style="display:none;"><img id="logo" src="'+image+'" /><div id="title">'+title+'</div><div id="description">'+description+'</div></div>'
 };
 
