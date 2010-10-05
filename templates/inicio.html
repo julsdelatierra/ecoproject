@@ -2,6 +2,10 @@
 {%extends "base.html"%}
 {%block title%}ECO Consultores - Aquí te decimos cómo.{%endblock%}
 
+{%block body_open%}
+<body style="text-align:center; margin:0px auto;">
+{%endblock%}
+
 {%block header%}
 <div id="video_container"><div class="video">
 <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="550" height="330">
@@ -46,3 +50,8 @@
 <script type="text/javascript">
 swfobject.registerObject("FlashID");
 </script>
+
+
+{%block body_close%}
+</body>
+{%endblock%}

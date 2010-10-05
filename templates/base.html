@@ -9,7 +9,9 @@
 		<script type="text/javascript" src="{{MEDIA_URL}}js/faq_lib.js"></script>
         <script type="text/javascript" src="{{MEDIA_URL}}js/action.js"></script>
     </head>
+    {%block body_open%}
     <body>
+    {%endblock%}
         {%load i18n%}
         <div id="container">
         <div id="menu_container">
@@ -39,6 +41,7 @@
         		<span id="year">ECO Consultores, {{year}}  ®</span>
         	</div>
         </div>
-        
+    {%block body_close%}    
     </body>
+    {%endblock%}
 </html>
