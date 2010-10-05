@@ -1,9 +1,10 @@
 /*---- ALL CONTENT ----*/
 	@charset "utf-8";
-
+/*---- Fuente Titillium  ----*/
+/* USAR: font-family: 'TitilliumText15L400wt', sans-serif; */
 	@font-face {
 	font-family: 'TitilliumText15L400wt';
-	src: url('titillium15l400w-webfont.eot');
+	src: url('/medios/fonts/titillium15l400w-webfont.eot');
 	src: local('☺'), url('/medios/fonts/titillium15l400w-webfont.woff') format('woff'), url('/medios/fonts/titillium15l400w-webfont.ttf') format('truetype'), url('/medios/fonts/titillium15l400w-webfont.svg#webfontzYm6nPAO') format('svg');
 	font-weight: normal;
 	font-style: normal;
@@ -15,9 +16,36 @@
 	line-height:normal;
 	font-family: 'TitilliumText15L400wt', sans-serif;
 	font-size-adjust: 0.5;
-
 	}
+/*---- /Fuente Titillium  ----*/	
+
+
+/*---- Fuente Aller Regular  ----*/
+/*USAR: font-family: 'AllerRegular', sans-serif; */
+	@font-face {
+	font-family: 'AllerRegular';
+	src: url('/medios/fonts/aller_rg-webfont.eot');
+	src: local('☺'), url('/medios/fonts/aller_rg-webfont.woff') format('woff'), url('/medios/fonts/aller_rg-webfont.ttf') format('truetype'), url('/medios/fonts/aller_rg-webfont.svg#webfontdge4AJrF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*---- /Fuente Aller Regular ----*/
+
 	
+
+/*---- Fuente Aller Light ----*/
+/* USAR: font-family: 'AllerLightRegular', sans-serif; */
+
+@font-face {
+	font-family: 'AllerLightRegular';
+	src: url('/medios/fonts/aller_lt-webfont.eot');
+	src: local('☺'), url('/medios/fonts/aller_lt-webfont.woff') format('woff'), url('/medios/fonts/aller_lt-webfont.ttf') format('truetype'), url('/medios/fonts/aller_lt-webfont.svg#webfontDPndFzTL') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*---- /Fuente Aller Light  ----*/
+
+
 
 	body{background:url(/medios/img/fondo.jpg) fixed; margin:0px auto;}
 
@@ -31,7 +59,7 @@
 	#language_switch_button{width:960px; height:40px; float:right;}
 	#language_switch_button input{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:italic; background: none; border:none;}
 
-	#menu{float:right; margin:14px 40px 0 0; text-decoration:none;}
+	#menu{float:right; margin:14px 45px 0 0; text-decoration:none;}
 	#menu a:hover{text-decoration:none;}
 	#menu li{list-style:none; float:left; font-size:13pt; }
 	#menu li.item_menu_inicio a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_inicio_normal.gif) no-repeat;}
@@ -47,18 +75,18 @@
 	#header{width:960px; float:left;}
 	#content{width:960px; float:left;}
 	
-	#content .main_text{width:760px; height:86px; float:left; text-align:justify; padding:15px 100px; font-size:12pt; color:#58595B;}
+	#content .main_text{width:760px; height:86px; float:left; text-align:justify; padding:15px 100px; font-size:12pt; color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 	
 	/*---- BIG HEADS ----*/
 	#head_big{width:960px; height:284px; float:left; background:url(/medios/img/header_big_bg.png) no-repeat; margin:0 0 25px 0;}
 	#head_big #title{width:572px; color:#FFF; font-size:35pt; float:right; margin:77px 10px 0 0; text-align:left;}
-	#head_big #subtitle{width:572px; color:#231F20; font-size:14pt; float:right; text-align:left; margin:0 10px 0 0;}
+	#head_big #subtitle{width:572px; color:#231F20; font-size:13pt; float:right; text-align:left; margin:0 10px 0 0; font-family: 'AllerRegular', sans-serif;}
 	/*--- /BIG HEADS ----*/
 	
 	/*---- MEDIUM HEADS ----*/
 	#head_medium{width:960px; height:116px; float:left; background:url(/medios/img/header_medium_bg.png) no-repeat; margin:0 0 25px 0; text-align:center;}
 	#head_medium #title{width:100%; color:#FFF; font-size:28pt; float:right; margin:35px 0 0 0; text-align:center;}
-	#head_medium #subtitle{width:572px; color:#231F20; font-size:14pt; float:right; text-align:center; margin:0 10px 0 0;}
+	#head_medium #subtitle{width:572px; color:#231F20; font-size:13pt; float:right; text-align:center; margin:0 10px 0 0; font-family: 'AllerRegular', sans-serif;}
 	/*--- /MEDIUM HEADS ----*/
 	
 	
@@ -81,10 +109,15 @@
 
 /*//////////////////////////////[ EMPRESA ]//////////////////////////////////////*/
 #head_big #title_company{width:572px; color:#FFF; font-size:35pt; float:left; margin:77px 0 0 58px ; text-align:left;}
-#head_big #subtitle_company{width:572px; color:#231F20; font-size:14pt; float:left; text-align:left; margin:0 0 0 58px ;}
+#head_big #subtitle_company{width:572px; color:#231F20; font-size:13pt; float:left; text-align:left; margin:0 0 0 58px; font-family: 'AllerLightRegular', sans-serif;}
 #content #company_philosophy{width:490px; height:261px; float:left; margin-left:70px; color:#58595B;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
-#globe_company{width:318px; height:323px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:0 0 50px 77px;}
+#content #company_philosophy span#text{font-family: 'AllerRegular', sans-serif; text-align:justify;}
+#globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:0 0 50px 77px; padding:58px 30px 23px 30px;}
+#globe_company .title{color:#27AAE1; font-size:15pt; font-weight:bold;}
+#globe_company .text{color:#414042; font-size:11pt;  font-family: 'AllerLightRegular', sans-serif;}
+#globe_company .link a{color:#56AC41; text-decoration:none; font-size:11pt; text-align:right; font-family: 'AllerLightRegular', sans-serif;}
+#globe_company .link a:hover{text-decoration:underline;}
 /*------------------------------ /EMPRESA ---------------------------------------*/
 
 
@@ -92,11 +125,11 @@
 #video_container{width:550px; height:370px; position:absolute; background:url(/medios/img/video_reflect_bg.png) bottom no-repeat; z-index:1000; margin-left:360px; top:128px;}
 #video_container .video{width:550px; height:330px; background:#000;}
 
-#globo_inicio{width:572px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 35px 0 0;}
-#globo_inicio #big_text{width:572px; height:191px; float:right; background:(/medios/img/globo_inicio.png) no-repeat; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
-#globo_inicio #tiny_text{width:572px; height:191px; float:right; background:(/medios/img/globo_inicio.png) no-repeat; font-size:14pt; color:#6D6E71; float:right;}
-#parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 15px 0;}
-#parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; font-style:italic; color:#000; display:block;}
+#globo_inicio{width:550px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 50px 0 0;}
+#globo_inicio #big_text{float:right; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
+#globo_inicio #tiny_text{width:100%; float:right; font-size:14pt; color:#6D6E71; float:right; text-align:center; font-family: 'AllerRegular', sans-serif;}
+#parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 15px 0; font-family: 'AllerLightRegular', sans-serif;}
+#parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; font-style:oblique; color:#000; display:block; font-family: 'AllerRegular', sans-serif;}
 /*----------------------------- /INICIO ---------------------------------------*/
 
 
@@ -109,8 +142,8 @@
 #globe_portfolio .arrow_05{width:917px; height:32px; background:url(/medios/img/arrow_globo_portafolio.png) no-repeat 755px 0; display:block; float:left;}
 
 #globe_portfolio #logo{margin:35px 0 0 45px; float:left;}
-#globe_portfolio #title{margin:35px 0 0 50px; font-size:14pt; float:left; color:#27AAE1; }
-#globe_portfolio #description{margin:20px 0 0 50px; float:left; width:700px; height:150px; overflow:auto; color:#58595B; font-size:12pt;}
+#globe_portfolio #title{margin:35px 0 0 50px; font-size:14pt; float:left; color:#27AAE1;}
+#globe_portfolio #description{margin:20px 0 0 50px; float:left; width:700px; height:150px; overflow:auto; color:#58595B; font-size:12pt; font-family: 'AllerLightRegular', sans-serif;}
 
 li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;}
 /*----------------------------- /PORTAFOLIO ---------------------------------------*/
@@ -119,26 +152,26 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 /*//////////////////////////////[ SERVICIOS ]//////////////////////////////////////*/
 .globe_services{width:916px; height:267px;  background:url(/medios/img/globo_servicios.png) no-repeat; margin:25px auto; padding-top:55px; display:block;}
-.globe_services #text{ margin:30px; font-size:15pt; color:#58595B;}
-.globe_services span{color:#27AAE1;}
+.globe_services #text{ margin:30px; font-size:15pt; color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
+.globe_services span{color:#27AAE1; font-family: 'AllerLightRegular', sans-serif;}
 
 .globe_services_bottom{width:931px; height:327px;  background:url(/medios/img/globo_bottom_servicios.png) no-repeat bottom; margin:25px auto; display:block;}
 .globe_services_bottom #left{width:465px; height:237px; float:left;}
 .globe_services_bottom #right{width:450px; margin-left:15px; height:237px; float:left;}
 
 .globe_services_bottom .title{ margin:15px; font-size:30pt; color:#51A33D;}
-.globe_services_bottom .text{ width:400px; margin:15px 25px 5px 15px; font-size:11pt; color:#58595B; text-align:justify;}
+.globe_services_bottom .text{ width:400px; margin:15px 25px 5px 15px; font-size:11pt; color:#58595B; text-align:justify; font-family: 'AllerLightRegular', sans-serif;}
 .globe_services_bottom ul {list-style-position:outside; color:#56AC41; list-style-type:disc;}
-.globe_services_bottom ul li{font-size:11pt; text-align:left;}
+.globe_services_bottom ul li{font-size:11pt; text-align:left; font-family: 'AllerLightRegular', sans-serif;}
 .globe_services_bottom ul li:first-line{color:#58595B;}
 
 .globe_services_bottom .link_bottom a:hover{text-decoration:underline;}
 
 .globe_services_bottom #left .link_bottom {font-size:11pt;  text-align:center; line-height:10px;}
-.globe_services_bottom #left .link_bottom a{color:#58595B;}
+.globe_services_bottom #left .link_bottom a{color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 
 .globe_services_bottom #right .link_bottom {font-size:11pt; color:#56AC41; text-align:center; line-height:10px;}
-.globe_services_bottom #right .link_bottom a{color:#56AC41;}
+.globe_services_bottom #right .link_bottom a{color:#56AC41; font-family: 'AllerLightRegular', sans-serif;}
 
 /*----------------------------- /SERVICIOS ---------------------------------------*/
 
@@ -148,7 +181,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 #questions_list{width:320px; margin-right:12px; float:left;}
 #questions_list #top{width:320px; height:39px; margin-right:12px; float:left; background:url(/medios/img/questions_top_bg.png) no-repeat; text-align:center; color:#56AC41; font-size:20pt; padding:10px 0 0 0;}
-#questions_list .middle{width:320px; background:url(/medios/img/questions_middle_bg.png) repeat-y; float:left;}
+#questions_list .middle{width:320px; background:url(/medios/img/questions_middle_bg.png) repeat-y; float:left; }
 #questions_list #bottom{width:320px; height:19px; background:url(/medios/img/questions_bottom_bg.png) no-repeat; float:left;}
 #questions_list li{color:#27AAE1; font-size:17pt; list-style-type:none;}
 #questions_list li a{text-decoration:none;}
@@ -159,22 +192,22 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 #answers_list{width:627px; float:left; margin-bottom:50px;}
 #answers_list #top{width:627px; height:14px; background:url(/medios/img/answers_top_bg.png) no-repeat; float:left;}
 #answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left; padding-bottom:15px;}
-#answers_list .middle .question_button{width:581px; height:28px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:10px 0 0 12px; margin-left:12px;}
-#answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px;} 
+#answers_list .middle .question_button{width:581px; height:28px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:10px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;}
+#answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;} 
 
 #answers_list #bottom{width:627px; height:14px; background:url(/medios/img/answers_bottom_bg.png) no-repeat; float:left;}
 
 .question_button{cursor: pointer;}
 
 #globe_faq_form{width:603px; height:194px; margin:12px 0 12px 12px; background:url(/medios/img/globe_faq.png) no-repeat; float:left;}
-#globe_faq_form #form_title{color:#27AAE1; font-size:12pt; text-align:center; width:100%; margin:38px 0 12px 0;}
+#globe_faq_form #form_title{color:#27AAE1; font-size:12pt; text-align:center; width:100%; margin:38px 0 12px 0; font-family: 'AllerLightRegular', sans-serif;}
 #globe_faq_form table{margin-left:12px;}
 
-#globe_faq_form input[type=button]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; margin:-7px 0 0 -5px;}
+#globe_faq_form input[type=button]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; margin:-7px 0 0 -5px; font-family: 'AllerLightRegular', sans-serif;}
 #globe_faq_form input[type=button]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
 
-#globe_faq_form input{width:266px; height:28px; background:url(/medios/img/input_faq_bg.png) no-repeat; border:none; color:#A3A2A2; padding:3px; font-size:12pt;}
-#globe_faq_form textarea{width:279px; height:77px; margin-left:12px; background:url(/medios/img/textarea_faq_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none;}
+#globe_faq_form input{width:266px; height:28px; background:url(/medios/img/input_faq_bg.png) no-repeat; border:none; color:#A3A2A2; padding:3px; font-size:12pt; font-family: 'AllerLightRegular', sans-serif;}
+#globe_faq_form textarea{width:279px; height:77px; margin-left:12px; background:url(/medios/img/textarea_faq_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none; font-family: 'AllerLightRegular', sans-serif;}
 
 /*----------------------------- /SERVICIOS ---------------------------------------*/
 
@@ -182,13 +215,13 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 /*////////////////////////////////[ CONTACTO ]//////////////////////////////////////*/
 #globe_contact_form{width:917px; height:290px;  margin:0px auto; background:url(/medios/img/globo_contacto.png) no-repeat; display:block; overflow:hidden;}
 #globe_contact_form table{margin:52px 0 0 21px;}
-#globe_contact_form input[type=submit]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none;}
+#globe_contact_form input[type=submit]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; font-family: 'AllerLightRegular', sans-serif;}
 #globe_contact_form input[type=submit]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
-#globe_contact_form input{width:277px; height:27px; background:url(/medios/img/input_contacto_bg.png) no-repeat; border:none; color:#A3A2A2; padding:5px; font-size:12pt;}
-#globe_contact_form textarea{width:869px; height:134px; background:url(/medios/img/textarea_contacto_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none;}
+#globe_contact_form input{width:277px; height:27px; background:url(/medios/img/input_contacto_bg.png) no-repeat; border:none; color:#A3A2A2; padding:5px; font-size:12pt; font-family: 'AllerLightRegular', sans-serif;}
+#globe_contact_form textarea{width:869px; height:134px; background:url(/medios/img/textarea_contacto_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none; font-family: 'AllerLightRegular', sans-serif;}
 
 #contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; margin-bottom:25px;}
-#contact_data #data{width:422px; height:126px; font-size:11pt; float:left; margin-left:15px; background:url(/medios/img/contact_data_middle_border.png) right no-repeat; color:#6D6E71;}
+#contact_data #data{width:422px; height:126px; font-size:11pt; float:left; margin-left:15px; background:url(/medios/img/contact_data_middle_border.png) right no-repeat; color:#6D6E71; font-family: 'AllerLightRegular', sans-serif;}
 #contact_data #google_button a{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom.png) no-repeat; display:block; color:#31B3D0;}
 #contact_data #google_button a:hover{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom_over.png) no-repeat; display:block; color:#31B3D0;}
 /*-------------------------------- /CONTACTO ---------------------------------------*/
