@@ -15,7 +15,10 @@ $("document").ready(function(){
     
     preLoad('item_menu_back.gif','item_menu_final_back.gif','item_menu_inicio_back.gif','google_maps_buttom_over.png','send_button_over.png');
     
-    $('body').html(navigator.userAgent);
+    if(navigator.userAgent+"".indexOf == 'MSIE'){
+        $('body').html(navigator.userAgent);
+    }
+    
     console.log(navigator.userAgent);
     console.log(navigator.appCodeName);
     console.log(navigator.appName);
