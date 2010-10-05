@@ -23,6 +23,20 @@ show_globe_first_time = function(parent,position){
     $('#globe_portfolio').slideDown('slow');
 };
 
+/*Unique for 2 rows*/
+show_globe_first_time_for_two_rows = function(parent,position){
+    globe = create_globe_project(position);
+    parent.append(globe);
+    $('#globe_portfolio').slideDown('slow');
+};
+
+create_globe_project = function(position){
+    margin = calculate_margin(position);
+    last_margin = margin;
+    image = '<img id="arrow" src="/medios/img/arrow_globo_portafolio.png" style="margin-left:'+margin+'px;" />'
+    return '<div style="clear:both;"</div><div id="globe_portfolio" style="display:none;"><div class="arrow">'+image+'</div></div>'
+};
+
 update_arrow_globe_project = function(position){
     if(last_margin<calculate_margin(position)){
         temp_end = calculate_margin(position)-last_margin;

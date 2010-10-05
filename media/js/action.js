@@ -15,33 +15,35 @@ $("document").ready(function(){
     
     preLoad('item_menu_back.gif','item_menu_final_back.gif','item_menu_inicio_back.gif','google_maps_buttom_over.png','send_button_over.png');
     
-    if(navigator.userAgent+"".indexOf == 'MSIE'){
-        alert('FUCK');
-    }
-    
-    /*console.log(navigator.userAgent);
-    console.log(navigator.appCodeName);
-    console.log(navigator.appName);
-    console.log(navigator.platform);
-    console.log(navigator.product);
-    console.log(navigator.productSub);
-    console.log(navigator.vendor);*/
+    /*var IE = false;
+    if(!IE){
+        $('.video').html('<video src=""></video>');
+    }*/
     
     /*class="project_button" clicked*/
     $('.project_button').click(function(){
-        globe_portfolio = $('#globe_portfolio').val();
-        if(globe_portfolio==undefined){
-            show_globe_first_time($(this).parent(),$(this).attr('position'));
-            actual_globe_opened = $(this).parent().attr('position');
-        }
-        else{
-            if(actual_globe_opened != $(this).parent().attr('position')){
-                $('#globe_portfolio').remove();
-                show_globe_first_time($(this).parent(), $(this).attr('position'));
+        console.log($('.projects').length);
+        var globe_portfolio = $('#globe_portfolio').val();
+        if($('.projects').length>2){
+            if(globe_portfolio==undefined){
+                show_globe_first_time($(this).parent(),$(this).attr('position'));
                 actual_globe_opened = $(this).parent().attr('position');
             }
             else{
-                update_arrow_globe_project($(this).attr('position'));
+                if(actual_globe_opened != $(this).parent().attr('position')){
+                    $('#globe_portfolio').remove();
+                    show_globe_first_time($(this).parent(), $(this).attr('position'));
+                    actual_globe_opened = $(this).parent().attr('position');
+                }
+                else{
+                    update_arrow_globe_project($(this).attr('position'));
+                }
+            }
+        }
+        else{
+            if(globe_portfolio==undefined){
+                show_globe_first_time($(this).parent(),$(this).attr('position'));
+                actual_globe_opened = 1;
             }
         }
         data_project_description($(this).attr('id'),$(this).attr('position'),$(this).parent());
