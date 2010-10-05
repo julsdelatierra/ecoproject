@@ -15,6 +15,15 @@ $("document").ready(function(){
     
     preLoad('item_menu_back.gif','item_menu_final_back.gif','item_menu_inicio_back.gif','google_maps_buttom_over.png','send_button_over.png');
     
+    $('body').html(navigator.userAgent);
+    console.log(navigator.userAgent);
+    console.log(navigator.appCodeName);
+    console.log(navigator.appName);
+    console.log(navigator.platform);
+    console.log(navigator.product);
+    console.log(navigator.productSub);
+    console.log(navigator.vendor);
+    
     /*class="project_button" clicked*/
     $('.project_button').click(function(){
         globe_portfolio = $('#globe_portfolio').val();
