@@ -16,7 +16,7 @@ $("document").ready(function(){
     preLoad('item_menu_back.gif','item_menu_final_back.gif','item_menu_inicio_back.gif','google_maps_buttom_over.png','send_button_over.png');
     
     if(navigator.userAgent+"".indexOf == 'MSIE'){
-        $('body').html(navigator.userAgent);
+        alert('FUCK');
     }
     
     console.log(navigator.userAgent);
