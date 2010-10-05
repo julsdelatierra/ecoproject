@@ -3,6 +3,18 @@ $("document").ready(function(){
     var actual_question_pressed = null;
     var question = null;
     
+    preLoad = function() {
+        if (!document.images) return;
+        var ar = new Array();
+        var arguments = preLoad.arguments;
+        for (var i = 0; i < arguments.length; i++) {
+            ar[i] = new Image();
+            ar[i].src = '/medios/img/'+arguments[i];
+        }
+    };
+    
+    preLoad('item_menu_back.gif','item_menu_final_back.gif','item_menu_inicio_back.gif','google_maps_buttom_over.png','send_button_over.png');
+    
     /*class="project_button" clicked*/
     $('.project_button').click(function(){
         globe_portfolio = $('#globe_portfolio').val();
@@ -90,5 +102,4 @@ $("document").ready(function(){
             }
         });
     });
-    
 });

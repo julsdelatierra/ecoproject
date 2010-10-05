@@ -12,7 +12,7 @@ calculate_margin = function(position){
 create_globe_project = function(position){
     margin = calculate_margin(position);
     last_margin = margin;
-    image = '<img id="arrow" src="/medios/img/arrow_globo_portafolio.png" style="position:relative; left:'+margin+'px;" />'
+    image = '<img id="arrow" src="/medios/img/arrow_globo_portafolio.png" style="margin-left:'+margin+'px;" />'
     return '<div style="clear:both;"</div><div id="globe_portfolio" style="display:none;"><div class="arrow">'+image+'</div></div>'
 };
 
@@ -27,16 +27,16 @@ update_arrow_globe_project = function(position){
     if(last_margin<calculate_margin(position)){
         temp_end = calculate_margin(position)-last_margin;
         $('#arrow').animate({
-            left: '+='+temp_end
+            marginLeft: '+='+temp_end
         },500);
     }
     else{
         temp_end = last_margin - calculate_margin(position);
         $('#arrow').animate({
-            left: '-='+temp_end
+            marginLeft: '-='+temp_end
         },500);
     }
-    $('').insertAfter('#arrow');
+    $('#hide').remove();
     last_margin = calculate_margin(position);
 };
 
