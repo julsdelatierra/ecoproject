@@ -123,9 +123,9 @@
 #head_big #subtitle_company{width:572px; color:#231F20; font-size:13pt; float:left; text-align:left; margin:0 0 0 58px; font-family: 'AllerLightRegular', sans-serif;}
 #content #company_philosophy{width:490px; height:261px; float:left; margin-left:70px; color:#58595B;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
-#content #company_philosophy span#text{font-family: 'AllerRegular', sans-serif; text-align:justify;}
+#content #company_philosophy span#text{font-family: 'AllerLightRegular', sans-serif; text-align:justify;}
 #globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:0 0 50px 77px; padding:58px 30px 23px 30px;}
-#globe_company .title{color:#27AAE1; font-size:15pt; font-weight:bold;}
+#globe_company .title{color:#27AAE1; font-size:15pt;}
 #globe_company .text{color:#414042; font-size:11pt;  font-family: 'AllerLightRegular', sans-serif;}
 #globe_company .link a{color:#56AC41; text-decoration:none; font-size:11pt; text-align:right; font-family: 'AllerLightRegular', sans-serif;}
 #globe_company .link a:hover{text-decoration:underline;}
@@ -200,9 +200,10 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 .topic_button{cursor:pointer;}
 
-#answers_list{width:627px; float:left; margin-bottom:50px;}
+#answers_list{width:627px; float:left; margin-bottom:180px;}
 #answers_list #top{width:627px; height:14px; background:url(/medios/img/answers_top_bg.png) no-repeat; float:left;}
 #answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left; padding-bottom:15px;}
+#answers_list #questions_container{color:#6D6E71;}
 #answers_list .middle .question_button{width:581px; height:28px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:10px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;}
 #answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;} 
 
