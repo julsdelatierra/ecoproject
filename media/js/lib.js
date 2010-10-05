@@ -1,7 +1,23 @@
-create_globe_project = function(position){
-    return '<div style="clear:both;"</div><div id="globe_portfolio" style="display:none;"><div class="arrow_0'+position+'"></div></div>'
+var last_margin = null;
+
+calculate_real = function(position){
+    return parseInt(position)+parseInt(position-1);
 };
 
+calculate_margin = function(position){
+    return (85*calculate_real(position))-29;
+};
+
+/*Ready*/
+create_globe_project = function(position){
+    margin = calculate_margin(position);
+    console.log(margin);
+    last_margin = margin;
+    image = '<img id="arrow" src="/medios/img/arrow_globo_portafolio.png" style="position:relative; left:'+margin+'px;" />'
+    return '<div style="clear:both;"</div><div id="globe_portfolio" style="display:none;"><div class="arrow">'+image+'</div></div>'
+};
+
+/*Ready*/
 show_globe_first_time = function(parent,position){
     globe = create_globe_project(position);
     parent.append(globe);
@@ -9,7 +25,25 @@ show_globe_first_time = function(parent,position){
 };
 
 update_arrow_globe_project = function(position){
-    $('#globe_portfolio').html('<div class="arrow_0'+position+'"></div>');
+    if(last_margin<calculate_margin(position)){
+        temp_end = calculate_margin(position)-last_margin;
+        $('#arrow').animate({
+            left: '+='+temp_end
+        },500,function(){
+            console.log('listo');
+        });
+    }
+    else{
+        temp_end = last_margin - calculate_margin(position);
+        $('#arrow').animate({
+            left: '-='+temp_end
+        },500,function(){
+            console.log('listo');
+        });
+    }
+    console.log($('#arrow'));
+    $('').insertAfter('#arrow');
+    last_margin = calculate_margin(position);
 };
 
 project_data_format = function(name,year,description,image){
@@ -33,7 +67,7 @@ data_project_description = function(projectId,position,parent){
 write_question = function(id,text){
     question = '<span id="'+id+'" class="question_button">'+text+'</span>';
     $('#questions_container').append(question);
-}
+};
 
 questions_box = function(topicId){
     $.ajax({
@@ -80,7 +114,7 @@ write_answer_and_dialog = function(sender,data){
         </table>\
     </div>'
     $(content+DIALOG).insertAfter(sender);
-}
+};
 
 answer = function(sender){
     $.ajax({
@@ -102,7 +136,7 @@ remove_answer_contact_area = function(){
     $('#globe_faq_form').slideUp('slow',function(){
         $('#globe_faq_form').remove();
     });
-}
+};
 
 question_contact = function(question){
     $.ajax({
@@ -118,4 +152,4 @@ question_contact = function(question){
             remove_answer_contact_area();
         }
     });
-}
+};
