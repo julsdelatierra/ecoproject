@@ -197,9 +197,10 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 .topic_button{cursor:pointer;}
 
-#answers_list{width:627px; float:left; margin-bottom:180px;}
+#answers_list{width:627px; float:left; padding-bottom:180px;}
 #answers_list #top{width:627px; height:14px; background:url(/medios/img/answers_top_bg.png) no-repeat; float:left;}
 #answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left; padding-bottom:15px;}
+#answers_list h2{display:block; text-align:center; margin-top:30px;}
 #answers_list #questions_container{color:#6D6E71;}
 #answers_list .middle .question_button{width:581px; height:28px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:10px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;}
 #answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;} 
