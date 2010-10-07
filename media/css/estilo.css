@@ -69,7 +69,8 @@
 	#menu_container{width:960px; height:145px; float:left; background:url(/medios/img/menu_bg.png)}
 	#language_switch_button{width:960px; height:40px; float:right;}
 	#language_switch_button input{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:oblique; background: none; border:none;}
-
+	#language_switch_button input:hover{text-decoration:underline; cursor:pointer; color:#31B3D0;}
+	
 	#menu{float:right; margin:14px 45px 0 0; text-decoration:none;}
 	#menu a:hover{text-decoration:none;}
 	#menu li{list-style:none; float:left; font-size:13pt; }
@@ -90,13 +91,13 @@
 	
 	/*---- BIG HEADS ----*/
 	#head_big{width:960px; height:284px; float:left; background:url(/medios/img/header_big_bg.png) no-repeat; margin:0 0 25px 0;}
-	#head_big #title{width:572px; color:#FFF; font-size:35pt; float:right; margin:77px 10px 0 0; text-align:left;}
+	#head_big #title{width:572px; color:#FFF; font-size:35pt; float:right; margin:77px 10px 0 0; text-align:left; text-shadow:0 -0.03em #045500;}
 	#head_big #subtitle{width:572px; color:#231F20; font-size:13pt; float:right; text-align:left; margin:0 10px 0 0; font-family: 'AllerRegular', sans-serif;}
 	/*--- /BIG HEADS ----*/
 	
 	/*---- MEDIUM HEADS ----*/
 	#head_medium{width:960px; height:116px; float:left; background:url(/medios/img/header_medium_bg.png) no-repeat; margin:0 0 25px 0; text-align:center;}
-	#head_medium #title{width:100%; color:#FFF; font-size:28pt; float:right; margin:35px 0 0 0; text-align:center;}
+	#head_medium #title{width:100%; color:#FFF; font-size:28pt; float:right; margin:35px 0 0 0; text-align:center; text-shadow:0 -0.03em #045500;}
 	#head_medium #subtitle{width:572px; color:#231F20; font-size:13pt; float:right; text-align:center; margin:0 10px 0 0; font-family: 'AllerRegular', sans-serif;}
 	/*--- /MEDIUM HEADS ----*/
 	
@@ -110,16 +111,18 @@
 	/*---- FOOTER ----*/
 	#footer{float:left;	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom; height:76px;  width: 100%;}
 	#footer #arrow_footer{background:url(/medios/img/arrow_up_footer.png) no-repeat; background-position:862px 10px; width:960px; height:50px; margin:0px auto;}
-	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0 -0.1em #1C5100;}
-	#year{float:right;}
+	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0 -0.1em #1C5100; text-align:left;}
+	#year{float:right; margin-right:12px;}
 	/*---- /FOOTER ----*/
+	
+
 	
 	
 /*---- /ALL CONTENT ----*/
 
 
 /*//////////////////////////////[ EMPRESA ]//////////////////////////////////////*/
-#head_big #title_company{width:572px; color:#FFF; font-size:35pt; float:left; margin:77px 0 0 58px ; text-align:left;}
+#head_big #title_company{width:572px; color:#FFF; font-size:35pt; float:left; margin:77px 0 0 58px ; text-align:left; text-shadow:0 -0.03em #045500;}
 #head_big #subtitle_company{width:572px; color:#231F20; font-size:13pt; float:left; text-align:left; margin:0 0 0 58px; font-family: 'AllerLightRegular', sans-serif;}
 #content #company_philosophy{width:490px; height:261px; float:left; margin-left:70px; color:#58595B;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
@@ -159,13 +162,15 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 
 /*//////////////////////////////[ SERVICIOS ]//////////////////////////////////////*/
-.globe_services{width:916px; height:267px;  background:url(/medios/img/globo_servicios.png) no-repeat; margin:25px auto; padding-top:55px; display:block;}
+.globe_services{width:916px; height:230px;  background:url(/medios/img/globo_servicios.png) no-repeat; margin:20px auto; padding-top:55px; display:block; }
 .globe_services #text{ margin:30px; font-size:14pt; color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 .globe_services span{color:#27AAE1; font-family: 'AllerLightRegular', sans-serif;}
 
-.globe_services_bottom{width:931px; height:327px;  background:url(/medios/img/globo_bottom_servicios.png) no-repeat bottom; margin:25px auto; display:block;}
-.globe_services_bottom #left{width:465px; height:237px; float:left;}
-.globe_services_bottom #right{width:450px; margin-left:15px; height:237px; float:left;}
+.globe_services_bottom{width:931px; height:350px;  background:url(/medios/img/globo_bottom_servicios.png) no-repeat bottom; margin:25px auto; display:block;}
+.globe_services_bottom #left{width:465px; height:299px; float:left;}
+.globe_services_bottom #right{width:450px; margin-left:15px; height:299px; float:left;}
+
+
 
 .globe_services_bottom .title{ margin:15px; font-size:30pt; color:#51A33D;}
 .globe_services_bottom .text{ width:400px; margin:15px 25px 5px 15px; font-size:11pt; color:#58595B; text-align:justify; font-family: 'AllerLightRegular', sans-serif;}
@@ -175,11 +180,11 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 .globe_services_bottom .link_bottom a:hover{text-decoration:underline;}
 
-.globe_services_bottom #left .link_bottom {font-size:11pt;  text-align:center;}
-.globe_services_bottom #left .link_bottom a{color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
+.globe_services_bottom #left_link{width:465px; float:left; margin-top:18px; font-size:11pt; text-align:center;}
+.globe_services_bottom #left_link .link_bottom a{color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 
-.globe_services_bottom #right .link_bottom {font-size:11pt; color:#56AC41; text-align:center;}
-.globe_services_bottom #right .link_bottom a{color:#56AC41; font-family: 'AllerLightRegular', sans-serif;}
+.globe_services_bottom #right_link{width:450px; margin-left:15px; float:left; margin-top:18px; font-size:11pt; text-align:center;}
+.globe_services_bottom #right_link .link_bottom a{color:#56AC41; font-family: 'AllerLightRegular', sans-serif;}
 
 /*----------------------------- /SERVICIOS ---------------------------------------*/
 
@@ -202,7 +207,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 #answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left; padding-bottom:15px;}
 #answers_list h2{display:block; text-align:center; margin-top:30px;}
 #answers_list #questions_container{color:#6D6E71;}
-#answers_list .middle .question_button{width:581px; height:28px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:10px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;}
+#answers_list .middle .question_button{width:581px; height:30px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:7px 0 0 12px; margin-left:17px; font-family: 'AllerLightRegular', sans-serif;}
 #answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;} 
 
 #answers_list #bottom{width:627px; height:14px; background:url(/medios/img/answers_bottom_bg.png) no-repeat; float:left;}
@@ -213,25 +218,24 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 #globe_faq_form #form_title{color:#27AAE1; font-size:12pt; text-align:center; width:100%; margin:38px 0 12px 0; font-family: 'AllerLightRegular', sans-serif;}
 #globe_faq_form table{margin-left:12px;}
 
-#globe_faq_form input[type=button]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; margin:-2px 3px 0 0; font-family: 'AllerLightRegular', sans-serif;}
+#globe_faq_form input[type=text]{width:266px; height:28px; background:url(/medios/img/input_faq_bg.png) no-repeat; border:none; color:#A3A2A2; padding:3px 0 0 15px; font-size:11pt; font-family: 'AllerLightRegular', sans-serif;}
+#globe_faq_form textarea{width:279px; height:77px; margin-left:5px; background:url(/medios/img/textarea_faq_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px 0 0 15px; font-size:11pt; resize:none; font-family: 'AllerLightRegular', sans-serif; overflow:auto;}
+#globe_faq_form input[type=button]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; margin:-2px 12px 0 0; font-family: 'AllerLightRegular', sans-serif;}
 #globe_faq_form input[type=button]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
-
-#globe_faq_form input{width:266px; height:28px; background:url(/medios/img/input_faq_bg.png) no-repeat; border:none; color:#A3A2A2; padding:3px; font-size:11pt; font-family: 'AllerLightRegular', sans-serif;}
-#globe_faq_form textarea{width:279px; height:77px; margin-left:12px; background:url(/medios/img/textarea_faq_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none; font-family: 'AllerLightRegular', sans-serif; overflow:auto;}
-
 /*----------------------------- /SERVICIOS ---------------------------------------*/
 
 
 /*////////////////////////////////[ CONTACTO ]//////////////////////////////////////*/
 #globe_contact_form{width:917px; height:290px;  margin:0px auto; background:url(/medios/img/globo_contacto.png) no-repeat; display:block; overflow:hidden;}
 #globe_contact_form table{margin:52px 0 0 21px;}
-#globe_contact_form input[type=submit]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; font-family: 'AllerLightRegular', sans-serif;}
+#globe_contact_form input{width:277px; height:27px; background:url(/medios/img/input_contacto_bg.png) no-repeat; border:none; color:#A3A2A2; padding:5px 0 5px 15px; font-size:11pt; font-family: 'AllerLightRegular', sans-serif;}
+#globe_contact_form textarea{width:869px; height:134px; background:url(/medios/img/textarea_contacto_bg.png) no-repeat; color:#A3A2A2; border:none; padding:5px 0 5px 15px; font-size:11pt; resize:none; font-family: 'AllerLightRegular', sans-serif; overflow:auto;}
+#globe_contact_form input[type=submit]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; font-family: 'AllerLightRegular', sans-serif; padding:0; margin-right:12px;}
 #globe_contact_form input[type=submit]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
-#globe_contact_form input{width:277px; height:27px; background:url(/medios/img/input_contacto_bg.png) no-repeat; border:none; color:#A3A2A2; padding:5px; font-size:11pt; font-family: 'AllerLightRegular', sans-serif;}
-#globe_contact_form textarea{width:869px; height:134px; background:url(/medios/img/textarea_contacto_bg.png) no-repeat; color:#A3A2A2; border:none; padding:3px; font-size:11pt; resize:none; font-family: 'AllerLightRegular', sans-serif; overflow:auto;}
 
-#contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; margin-bottom:25px;}
-#contact_data #data{width:422px; height:126px; font-size:11pt; float:left; margin-left:15px; background:url(/medios/img/contact_data_middle_border.png) right no-repeat; color:#6D6E71; font-family: 'AllerLightRegular', sans-serif;}
+#contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; padding-bottom:350px;}
+#contact_data #data b{font-weight:bolder;}
+#contact_data #data{width:422px; height:126px; font-size:10pt; float:left; margin-left:15px; background:url(/medios/img/contact_data_middle_border.png) right no-repeat; color:#6D6E71; font-family: 'AllerLightRegular', sans-serif;}
 #contact_data #google_button a{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom.png) no-repeat; display:block; color:#31B3D0;}
 #contact_data #google_button a:hover{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom_over.png) no-repeat; display:block; color:#31B3D0;}
 /*-------------------------------- /CONTACTO ---------------------------------------*/
@@ -240,7 +244,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 
 /*////////////////////////////[ ESPECIALES ]//////////////////////////////////////*/
-.error{background:url(/medios/img/error_back.png) center no-repeat; text-align:center; font-size:10pt; color:white; font-weight:600;  width:269px; height:17px; text-shadow:0 0.1em 0.1em #666; padding-top:5px;}
+.error{background:url(/medios/img/error_back.png) center no-repeat; text-align:center; font-size:10pt; color:white; font-weight:600;  width:269px; height:17px; text-shadow:0 -0.1em #036; padding-top:5px;}
 /*---------------------------- /ESPECIALES ---------------------------------------*/
 
 
