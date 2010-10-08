@@ -23,13 +23,6 @@ show_globe_first_time = function(parent,position){
     $('#globe_portfolio').slideDown('slow');
 };
 
-/*Unique for 2 rows*/
-show_globe_first_time_for_two_rows = function(parent,position){
-    var globe = create_globe_project(position);
-    parent.append(globe);
-    $('#globe_portfolio').slideDown('slow');
-};
-
 create_globe_project = function(position){
     var margin = calculate_margin(position);
     last_margin = margin;
@@ -65,8 +58,8 @@ data_project_description = function(projectId,position,parent){
         type:'POST',
         data:{'projectId':projectId},
         success:function(data){
-            var data_format = project_data_format(data['name'],data['year'],data['description'],data['image']);
-            //$('#globe_portfolio').append(data_format);
+            /*var data_format = project_data_format(data['name'],data['year'],data['description'],data['image']);
+            $('#globe_portfolio').append(data_format);*/
             $('#hide').fadeIn(2000);
         }
     });
