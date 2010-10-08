@@ -17,7 +17,7 @@ $("document").ready(function(){
     
     /*class="project_button" clicked*/
     $('.project_button').click(function(){
-        var globe_portfolio = $('#globe_portfolio').val();
+        globe_portfolio = $('#globe_portfolio').val();
         if(globe_portfolio==undefined){
             show_globe_first_time($(this).parent(),$(this).attr('position'));
             actual_globe_opened = $(this).parent().attr('position');
@@ -29,10 +29,10 @@ $("document").ready(function(){
                 actual_globe_opened = $(this).parent().attr('position');
             }
             else{
-                console.log('update');
                 update_arrow_globe_project($(this).attr('position'));
             }
         }
+        data_project_description($(this).attr('id'),$(this).attr('position'),$(this).parent());
     });
     
     /*class="topic_button" clicked*/

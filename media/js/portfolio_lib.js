@@ -58,8 +58,8 @@ data_project_description = function(projectId,position,parent){
         type:'POST',
         data:{'projectId':projectId},
         success:function(data){
-            /*var data_format = project_data_format(data['name'],data['year'],data['description'],data['image']);
-            $('#globe_portfolio').append(data_format);*/
+            var data_format = project_data_format(data['name'],data['year'],data['description'],data['image']);
+            $('#globe_portfolio').append(data_format);
             $('#hide').fadeIn(2000);
         }
     });
