@@ -10,7 +10,7 @@ calculate_margin = function(position){
 
 /*Ready*/
 create_globe_project = function(position){
-    margin = calculate_margin(position);
+    var margin = calculate_margin(position);
     last_margin = margin;
     image = '<img id="arrow" src="/medios/img/arrow_globo_portafolio.png" style="margin-left:'+margin+'px;" />'
     return '<div style="clear:both;"</div><div id="globe_portfolio" style="display:none;"><div class="arrow">'+image+'</div></div>'
@@ -18,34 +18,34 @@ create_globe_project = function(position){
 
 /*Ready*/
 show_globe_first_time = function(parent,position){
-    globe = create_globe_project(position);
+    var globe = create_globe_project(position);
     parent.append(globe);
     $('#globe_portfolio').slideDown('slow');
 };
 
 /*Unique for 2 rows*/
 show_globe_first_time_for_two_rows = function(parent,position){
-    globe = create_globe_project(position);
+    var globe = create_globe_project(position);
     parent.append(globe);
     $('#globe_portfolio').slideDown('slow');
 };
 
 create_globe_project = function(position){
-    margin = calculate_margin(position);
+    var margin = calculate_margin(position);
     last_margin = margin;
-    image = '<img id="arrow" src="/medios/img/arrow_globo_portafolio.png" style="margin-left:'+margin+'px;" />'
+    var image = '<img id="arrow" src="/medios/img/arrow_globo_portafolio.png" style="margin-left:'+margin+'px;" />'
     return '<div style="clear:both;"</div><div id="globe_portfolio" style="display:none;"><div class="arrow">'+image+'</div></div>'
 };
 
 update_arrow_globe_project = function(position){
     if(last_margin<calculate_margin(position)){
-        temp_end = calculate_margin(position)-last_margin;
+        var temp_end = calculate_margin(position)-last_margin;
         $('#arrow').animate({
             marginLeft: '+='+temp_end
         },500);
     }
     else{
-        temp_end = last_margin - calculate_margin(position);
+        var temp_end = last_margin - calculate_margin(position);
         $('#arrow').animate({
             marginLeft: '-='+temp_end
         },500);
@@ -65,8 +65,8 @@ data_project_description = function(projectId,position,parent){
         type:'POST',
         data:{'projectId':projectId},
         success:function(data){
-            data_format = project_data_format(data['name'],data['year'],data['description'],data['image']);
-            $('#globe_portfolio').append(data_format);
+            var data_format = project_data_format(data['name'],data['year'],data['description'],data['image']);
+            //$('#globe_portfolio').append(data_format);
             $('#hide').fadeIn(2000);
         }
     });
