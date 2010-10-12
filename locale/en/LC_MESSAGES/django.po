@@ -19,11 +19,11 @@ msgstr ""
 
 #: settings.py:46
 msgid "Español"
-msgstr ""
+msgstr "Spanish"
 
 #: settings.py:47
 msgid "Inglés"
-msgstr ""
+msgstr "English"
 
 #: templates/base.html:25 templates/empresa.html:20
 msgid "Empresa"
@@ -31,27 +31,27 @@ msgstr "Company"
 
 #: templates/base.html:28 templates/servicios.html:6
 msgid "Servicios"
-msgstr ""
+msgstr "Services"
 
 #: templates/base.html:31 templates/portafolio.html:7
 msgid "Portafolio"
-msgstr ""
+msgstr "Portfolio"
 
 #: templates/base.html:37
 msgid "Contactenos"
-msgstr ""
+msgstr "Contact us"
 
 #: templates/contacto.html:6
 msgid "Contacto"
-msgstr ""
+msgstr "Contact"
 
 #: templates/faq.html:6
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: templates/faq.html:11
 msgid "Centro de preguntas frecuentes"
-msgstr ""
+msgstr "FAQ Support Center"
 
 #: templates/faq.html:17
 msgid ""
@@ -101,7 +101,7 @@ msgstr "Página no encontrada"
 
 #: templates/admin/404.html:10
 msgid "We're sorry, but the requested page could not be found."
-msgstr ""
+msgstr "Lo sentimos, pero no se pudo encontrar la página solicitada"
 
 #: templates/admin/500.html:4 templates/admin/app_index.html:8
 #: templates/admin/base.html:54 templates/admin/change_form.html:18
@@ -111,19 +111,19 @@ msgstr ""
 #: templates/admin/invalid_setup.html:4 templates/admin/object_history.html:6
 #: templates/admin/auth/user/change_password.html:11
 msgid "Home"
-msgstr ""
+msgstr "Inicio"
 
 #: templates/admin/500.html:4
 msgid "Server error"
-msgstr ""
+msgstr "Error del servidor"
 
 #: templates/admin/500.html:6
 msgid "Server error (500)"
-msgstr ""
+msgstr "Error del servidor (500)"
 
 #: templates/admin/500.html:9
 msgid "Server Error <em>(500)</em>"
-msgstr ""
+msgstr "Error del servidor <em>(500)</em>"
 
 #: templates/admin/500.html:10
 msgid ""
@@ -308,19 +308,19 @@ msgstr ""
 
 #: templates/admin/login.html:26
 msgid "Log in"
-msgstr ""
+msgstr "Login"
 
 #: templates/admin/object_history.html:22
 msgid "Date/time"
-msgstr ""
+msgstr "Fecha/hora"
 
 #: templates/admin/object_history.html:23
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #: templates/admin/object_history.html:24
 msgid "Action"
-msgstr ""
+msgstr "Acción"
 
 #: templates/admin/object_history.html:38
 msgid ""
@@ -330,22 +330,22 @@ msgstr ""
 
 #: templates/admin/pagination.html:10
 msgid "Show all"
-msgstr ""
+msgstr "Mostrar todos"
 
 #: templates/admin/pagination.html:11 templates/admin/submit_line.html:3
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 #: templates/admin/search_form.html:8
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: templates/admin/search_form.html:10
 #, python-format
 msgid "1 result"
 msgid_plural "%(counter)s results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 resultado"
+msgstr[1] "%(counter)s resultados"
 
 #: templates/admin/search_form.html:10
 #, python-format
@@ -354,15 +354,15 @@ msgstr ""
 
 #: templates/admin/submit_line.html:5
 msgid "Save as new"
-msgstr ""
+msgstr "Guardar como nuevo"
 
 #: templates/admin/submit_line.html:6
 msgid "Save and add another"
-msgstr ""
+msgstr "Guardar y agregar otro"
 
 #: templates/admin/submit_line.html:7
 msgid "Save and continue editing"
-msgstr ""
+msgstr "Guardar y continuar editando"
 
 #: templates/admin/auth/user/add_form.html:5
 msgid ""
@@ -377,15 +377,15 @@ msgstr ""
 
 #: templates/admin/auth/user/change_password.html:35
 msgid "Password"
-msgstr ""
+msgstr "Clave"
 
 #: templates/admin/auth/user/change_password.html:41
 msgid "Password (again)"
-msgstr ""
+msgstr "Clave (de nuevo)"
 
 #: templates/admin/auth/user/change_password.html:42
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "Para verificar, introduce la misma clave que arriba."
 
 #: templates/admin/edit_inline/stacked.html:64
 #: templates/admin/edit_inline/tabular.html:110
@@ -396,8 +396,8 @@ msgstr ""
 #: templates/admin/edit_inline/stacked.html:67
 #: templates/admin/edit_inline/tabular.html:113
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: templates/admin/edit_inline/tabular.html:15
 msgid "Delete?"
-msgstr ""
+msgstr "¿Eliminar?"
