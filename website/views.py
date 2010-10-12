@@ -99,9 +99,9 @@ def switchLanguage(request):
             settings.LANGUAGE_CODE = 'en'
         else:
             settings.LANGUAGE_CODE = 'es'
-        if next == 'es':
+        if url == settings.URL+'es/':
             next = 'en'
-        if next == 'en':
+        if url == settings.URL+'en/':
             next = 'es'
         return redirect('/'+next+'/')
     else:

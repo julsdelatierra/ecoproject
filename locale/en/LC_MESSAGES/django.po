@@ -61,7 +61,7 @@ msgstr "Title"
 
 #: templates/portafolio.html:8
 msgid "Portafolio in di mauris. Vivamus hendrerit arcu."
-msgstr ""
+msgstr "Portfolio"
 
 #: templates/portafolio.html:11 templates/servicios.html:10
 msgid "Quisque commodo hendrerit lorem quis egestas. Maecenas quis."
@@ -77,7 +77,7 @@ msgstr "HOW"
 
 #: templates/servicios.html:7
 msgid "Servicios in di mauris. Vivamus hendrerit arcu."
-msgstr ""
+msgstr "Services"
 
 #: templates/servicios.html:18
 msgid "METODLOGÍA:"
