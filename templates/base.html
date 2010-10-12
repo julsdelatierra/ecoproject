@@ -21,11 +21,21 @@
         <a href="/"><div id="boton_index_logo"></div></a>
         <div id="menu">
             <ul>
+            	{%block company_act%}
             	<li class="item_menu_inicio"><a href="/empresa/">{%trans 'Empresa'%}</a></li>
+                {%endblock%}
+                {%block services_act%}
                 <li class="item_menu"><a href="/servicios/">{%trans 'Servicios'%}</a></li>
+                {%endblock%}
+                {%block portfolio_act%}
                 <li class="item_menu"><a href="/portafolio/">{%trans 'Portafolio'%}</a></li>
+                {%endblock%}
+                {%block faq_act%}
                 <li class="item_menu"><a href="/faq/">FAQ</a></li>
+                {%endblock%}
+                {%block contact_act%}
                 <li class="item_menu_final"><a href="/contacto/">{%trans 'Contactenos'%}</a></li>
+                {%endblock%}
             </ul>
         </div>
         </div>

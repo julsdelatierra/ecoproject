@@ -71,7 +71,7 @@
 	#language_switch_button input{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:oblique; background: none; border:none;}
 	#language_switch_button input:hover{text-decoration:underline; cursor:pointer; color:#31B3D0;}
 	
-	#menu{float:right; margin:14px 45px 0 0; text-decoration:none;}
+	#menu{float:right; margin:14px 50px 0 0; text-decoration:none;}
 	#menu a:hover{text-decoration:none;}
 	#menu li{list-style:none; float:left; font-size:13pt; }
 	#menu li.item_menu_inicio a{padding:9px 25px; color:#000; background:url(/medios/img/item_menu_inicio_normal.gif) no-repeat;}
@@ -83,6 +83,11 @@
 	#menu li{list-style:none; float:left; font-size:13pt;}
 	#menu li a{padding:9px 25px; background:#6CF; color:#000;}
 	#menu li a:hover{background:#000;}
+
+	#menu #active_inicio a {background:url(/medios/img/item_menu_inicio_back.gif) no-repeat; color:#FFF;}
+	#menu #item_active a{background:url(/medios/img/item_menu_back.gif) no-repeat; color:#FFF;}
+	#menu #active_final a{background:url(/medios/img/item_menu_final_back.gif) right no-repeat; color:#FFF;}
+
 
 	#header{width:960px; float:left;}
 	#content{width:960px; float:left;}
@@ -96,7 +101,7 @@
 	/*--- /BIG HEADS ----*/
 	
 	/*---- MEDIUM HEADS ----*/
-	#head_medium{width:960px; height:116px; float:left; background:url(/medios/img/header_medium_bg.png) no-repeat; margin:0 0 25px 0; text-align:center;}
+	#head_medium{width:960px; height:116px; float:left; background:url(/medios/img/header_medium_bg.png) no-repeat; margin:5px 0 25px 0; text-align:center;}
 	#head_medium #title{width:100%; color:#FFF; font-size:28pt; float:right; margin:35px 0 0 0; text-align:center; text-shadow:0 -0.03em #045500;}
 	#head_medium #subtitle{width:572px; color:#231F20; font-size:13pt; float:right; text-align:center; margin:0 10px 0 0; font-family: 'AllerRegular', sans-serif;}
 	/*--- /MEDIUM HEADS ----*/
@@ -124,10 +129,10 @@
 /*//////////////////////////////[ EMPRESA ]//////////////////////////////////////*/
 #head_big #title_company{width:572px; color:#FFF; font-size:35pt; float:left; margin:77px 0 0 58px ; text-align:left; text-shadow:0 -0.03em #045500;}
 #head_big #subtitle_company{width:572px; color:#231F20; font-size:13pt; float:left; text-align:left; margin:0 0 0 58px; font-family: 'AllerLightRegular', sans-serif;}
-#content #company_philosophy{width:490px; height:261px; float:left; margin-left:70px; color:#58595B;}
+#content #company_philosophy{width:490px; height:261px; float:left; margin:20px 0 0 70px; color:#58595B;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
 #content #company_philosophy span#text{font-family: 'AllerLightRegular', sans-serif; text-align:justify;}
-#globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:0 0 50px 77px; padding:58px 30px 23px 30px;}
+#globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:25px 0 50px 77px; padding:58px 30px 23px 30px;}
 #globe_company .title{color:#27AAE1; font-size:15pt;}
 #globe_company .text{color:#414042; font-size:11pt;  font-family: 'AllerLightRegular', sans-serif;}
 #globe_company .link a{color:#56AC41; text-decoration:none; font-size:11pt; text-align:right; font-family: 'AllerLightRegular', sans-serif;}
@@ -142,7 +147,7 @@
 #globo_inicio{width:550px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 50px 0 0;}
 #globo_inicio #big_text{width:100%; float:right; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
 #globo_inicio #tiny_text{width:100%; float:right; font-size:14pt; color:#6D6E71; float:right; text-align:center; font-family: 'AllerRegular', sans-serif;}
-#parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 15px 0; font-family: 'AllerLightRegular', sans-serif;}
+#parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 55px 0; font-family: 'AllerLightRegular', sans-serif;}
 #parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; color:#000; display:block; font-family: 'AllerItalic', sans-serif;}
 /*----------------------------- /INICIO ---------------------------------------*/
 
@@ -202,7 +207,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 .topic_button{cursor:pointer;}
 
-#answers_list{width:627px; float:left; padding-bottom:180px;}
+#answers_list{width:627px; float:left; padding-bottom:100px;}
 #answers_list #top{width:627px; height:14px; background:url(/medios/img/answers_top_bg.png) no-repeat; float:left;}
 #answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left; padding-bottom:15px;}
 #answers_list h2{display:block; text-align:center; margin-top:30px;}
@@ -233,7 +238,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 #globe_contact_form input[type=submit]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; font-family: 'AllerLightRegular', sans-serif; padding:0; margin-right:12px;}
 #globe_contact_form input[type=submit]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
 
-#contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; padding-bottom:350px;}
+#contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; padding-bottom:50px;}
 #contact_data #data b{font-weight:bolder;}
 #contact_data #data{width:422px; height:126px; font-size:10pt; float:left; margin-left:15px; background:url(/medios/img/contact_data_middle_border.png) right no-repeat; color:#6D6E71; font-family: 'AllerLightRegular', sans-serif;}
 #contact_data #google_button a{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom.png) no-repeat; display:block; color:#31B3D0;}

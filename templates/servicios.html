@@ -1,7 +1,12 @@
 {%extends "base.html"%}
 {%block title%}ECO Consultores - Servicios{%endblock%}
-{%block header%}
 {%load i18n%}
+
+{%block services_act%}
+<li id="item_active"><a href="/servicios/">{%trans 'Servicios'%}</a></li>
+{%endblock%}
+
+{%block header%}
 <div id="head_big">
   <div id="title">
     {%trans 'Servicios in di mauris. Vivamus hendrerit arcu.'%}

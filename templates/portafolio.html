@@ -1,8 +1,13 @@
 {%extends "base.html"%}
 {%block title%}ECO Consultores - Portafolio{%endblock%}
-{%block header%}
+
 {%load i18n%}
 
+{%block portfolio_act%}
+<li id="item_active"><a href="/portafolio/">{%trans 'Portafolio'%}</a></li>
+{%endblock%}
+
+{%block header%}
 <div id="head_big">
 <div id="title">
     {%trans 'Portafolio in di mauris. Vivamus hendrerit arcu.'%}
