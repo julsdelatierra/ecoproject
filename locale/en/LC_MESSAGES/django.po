@@ -80,9 +80,9 @@ msgid "Servicios in di mauris. Vivamus hendrerit arcu."
 msgstr ""
 
 #: templates/servicios.html:18
-msgid "METODOLOGÍA:"
-msgstr ""
+msgid "ESTRATEGIA:"
+msgstr "STRATEGY"
 
 #: templates/servicios.html:18
 msgid "TE DECIMOS CÓMO"
-msgstr ""
+msgstr "WE TELL YOU HOW"
