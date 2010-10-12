@@ -65,7 +65,7 @@ msgstr ""
 
 #: templates/faq.html:27
 msgid "Titulo"
-msgstr ""
+msgstr "Title"
 
 #: templates/portafolio.html:13
 msgid "Portafolio in di mauris. Vivamus hendrerit arcu."
@@ -77,11 +77,11 @@ msgstr ""
 
 #: templates/portafolio.html:24
 msgid "A QUIENES LES HEMOS DICHO"
-msgstr ""
+msgstr "Whom we've told"
 
 #: templates/portafolio.html:24
 msgid "COMO"
-msgstr ""
+msgstr "HOW"
 
 #: templates/servicios.html:12
 msgid "Servicios in di mauris. Vivamus hendrerit arcu."
@@ -89,15 +89,15 @@ msgstr ""
 
 #: templates/servicios.html:23
 msgid "METODOLOGÍA:"
-msgstr ""
+msgstr "Metodology"
 
 #: templates/servicios.html:23
 msgid "TE DECIMOS CÓMO"
-msgstr ""
+msgstr "We tell you how"
 
 #: templates/admin/404.html:4 templates/admin/404.html.py:8
 msgid "Page not found"
-msgstr ""
+msgstr "Página no encontrada"
 
 #: templates/admin/404.html:10
 msgid "We're sorry, but the requested page could not be found."
