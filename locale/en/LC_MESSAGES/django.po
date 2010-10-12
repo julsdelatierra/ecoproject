@@ -27,7 +27,7 @@ msgstr ""
 
 #: templates/base.html:25 templates/empresa.html:20
 msgid "Empresa"
-msgstr ""
+msgstr "Company"
 
 #: templates/base.html:28 templates/servicios.html:6
 msgid "Servicios"
