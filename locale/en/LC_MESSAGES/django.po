@@ -69,18 +69,18 @@ msgstr ""
 
 #: templates/portafolio.html:19
 msgid "A QUIENES LES HEMOS DICHO"
-msgstr ""
+msgstr "TO WHOM WE'VE TOLD"
 
 #: templates/portafolio.html:19
 msgid "COMO"
-msgstr ""
+msgstr "HOW"
 
 #: templates/servicios.html:7
 msgid "Servicios in di mauris. Vivamus hendrerit arcu."
 msgstr ""
 
 #: templates/servicios.html:18
-msgid "ESTRATEGIA:"
+msgid "METODLOGÍA:"
 msgstr "STRATEGY"
 
 #: templates/servicios.html:18
