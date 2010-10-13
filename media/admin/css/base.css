@@ -2,24 +2,24 @@
     DJANGO Admin styles
 */
 
-body {
+body { 
     margin: 0;
     padding: 0;
     font-size: 12px;
     font-family: "Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
     color: #333;
-    background: #fff;
+	background: url(/medios/img/fondo.jpg) fixed;
 }
 
 /* LINKS */
 
 a:link, a:visited {
-    color: #5b80b2;
+    color:#090;
     text-decoration: none;
 }
 
 a:hover {
-    color: #036;
+    color:#030;
 }
 
 a img {
@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5 {
 
 h1 {
     font-size: 18px;
-    color: #666;
+    color:#62c3d0;
     padding: 0 6px 0 0;
     margin: 0 0 .2em 0;
 }
@@ -600,12 +600,12 @@ a.deletelink:hover {
 }
 
 .object-tools a.addlink {
-    background: #999 url(../img/admin/tooltag-add.gif) top right no-repeat;
+    background: #62c3d0 url(../img/admin/tooltag-add.gif) top right no-repeat;
     padding-right: 28px;
 }
 
 .object-tools a.addlink:hover {
-    background: #5b80b2 url(../img/admin/tooltag-add_over.gif) top right no-repeat;
+    background: #55b855 url(../img/admin/tooltag-add_over.gif) top right no-repeat;
 }
 
 /* OBJECT HISTORY */
@@ -689,7 +689,7 @@ table#change-history tbody th {
 /* HEADER */
 
 #header {
-    background: #417690;
+    background: #060;
     color: #ffc;
     overflow: hidden;
 }
@@ -707,7 +707,7 @@ table#change-history tbody th {
     font-size: 18px;
     margin: 8px 0;
     font-weight: normal;
-    color: #f4f379;
+    color: #FFF;
 }
 
 #branding h2 {
@@ -719,6 +719,7 @@ table#change-history tbody th {
 }
 
 #user-tools {
+	color:#62c3d0;
     position: absolute;
     top: 0;
     right: 0;
