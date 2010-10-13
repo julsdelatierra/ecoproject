@@ -13,6 +13,8 @@
     <body>
     {%endblock%}
         {%load i18n%}
+        <div class="todo">
+        <div class="nofooter">
         <div id="container">
         <div id="menu_container">
         <form id="language_switch_button" method="post" action="/switchlanguage/">
@@ -39,18 +41,24 @@
             </ul>
         </div>
         </div>
-            <div id="header">{%block header%}{%endblock%}</div>
+         <div id="header">{%block header%}{%endblock%}</div>
         <div id="content">{%block content%}{%endblock%}</div>
         
-        </div>
-        
-        <div id="footer">
+        </div><!-- <div /container> -->
+        </div><!-- <div /nofooter> -->
+        </div><!-- <div /todo> -->
+     
+    <div class="footer_container">
+      <div id="footer">
         	<div id="arrow_footer"></div>
         		<div id="footer_content">
         		<span id="address">Avenida 56-A # 236 x 58-A y 60, Col. Alcalá Martín - Mérida, YUC, México 97050</span>
         		<span id="year">ECO Consultores, {{year}}  ®</span>
         	</div>
-        </div>
+      </div>
+        
+	</div><!-- div /footer_container -->
+     
     {%block body_close%}    
     </body>
     {%endblock%}

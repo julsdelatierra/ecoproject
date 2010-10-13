@@ -1,3 +1,34 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+.todo, .nofooter {
+	position: relative;
+	min-height: 100%;
+	z-index: 10;
+}
+* html .todo,.nofooter {
+	height: 100%;
+}
+.container {
+	clear: both;
+	height: auto;
+	margin-top: 0px;
+	margin-bottom: 35px; /*footer*/
+	vertical-align: top;
+}
+
+.footer_container {
+	position: relative;
+	margin: -126px auto 0 auto;
+	padding: 0px;
+	clear: both;
+	vertical-align: middle;
+	z-index: 101;
+}
+
+
+
 /*---- ALL CONTENT ----*/
 	@charset "utf-8";
 /*---- Fuente Titillium  ----*/
@@ -114,7 +145,7 @@
 	/*--- /CONTENT HEADLINES ----*/
 	
 	/*---- FOOTER ----*/
-	#footer{float:left;	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom; height:76px;  width: 100%;}
+	#footer{float:left;	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom; height:76px;  width: 100%; margin-top:50px;}
 	#footer #arrow_footer{background:url(/medios/img/arrow_up_footer.png) no-repeat; background-position:862px 10px; width:960px; height:50px; margin:0px auto;}
 	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0 -0.1em #1C5100; text-align:left;}
 	#year{float:right; margin-right:12px;}
@@ -207,13 +238,13 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 .topic_button{cursor:pointer;}
 
-#answers_list{width:627px; float:left; padding-bottom:100px;}
+#answers_list{width:627px; float:left;}
 #answers_list #top{width:627px; height:14px; background:url(/medios/img/answers_top_bg.png) no-repeat; float:left;}
 #answers_list .middle{width:627px; background:url(/medios/img/answers_middle_bg.png) repeat-y; float:left; padding-bottom:15px;}
 #answers_list h2{display:block; text-align:center; margin-top:30px;}
 #answers_list #questions_container{color:#6D6E71;}
 #answers_list .middle .question_button{width:581px; height:30px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:7px 0 0 12px; margin-left:17px; font-family: 'AllerLightRegular', sans-serif;}
-#answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;} 
+#answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;}
 
 #answers_list #bottom{width:627px; height:14px; background:url(/medios/img/answers_bottom_bg.png) no-repeat; float:left;}
 
