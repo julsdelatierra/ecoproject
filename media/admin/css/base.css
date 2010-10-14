@@ -14,12 +14,12 @@ body {
 /* LINKS */
 
 a:link, a:visited {
-    color:#090;
+    color:#56AC41;
     text-decoration: none;
 }
 
 a:hover {
-    color:#030;
+    color:#060;
 }
 
 a img {
@@ -27,8 +27,10 @@ a img {
 }
 
 a.section:link, a.section:visited {
-    color: white;
+	font-size:12pt;
+    color: #3399ff;
     text-decoration: none;
+	text-shadow:0 0.05em 0 #FFF;
 }
 
 /* GLOBAL DEFAULTS */
@@ -48,9 +50,9 @@ h1,h2,h3,h4,h5 {
 
 h1 {
     font-size: 18px;
-    color:#62c3d0;
+    color:#56AC41;
     padding: 0 6px 0 0;
-    margin: 0 0 .2em 0;
+    margin: 15px 0px;
 }
 
 h2 {
@@ -421,8 +423,9 @@ input[type=text], input[type=password], textarea, select, .vTextField {
     text-align: left;
     font-weight: bold;
     background: #7CA0C7 url(../img/admin/default-bg.gif) top left repeat-x;
-    color: white;
+	color: white;
 }
+
 
 .module table {
     border-collapse: collapse;
@@ -583,11 +586,11 @@ a.deletelink:hover {
     color: white;
     padding: .1em 14px .1em 8px;
     height: 14px;
-    background: #999 url(../img/admin/tool-right.gif) 100% 0 no-repeat;
+    background: #62c3d0 url(../img/admin/tool-right.gif) 100% 0 no-repeat;
 }
 
 .object-tools a:hover, .object-tools li:hover a {
-    background: #5b80b2 url(../img/admin/tool-right_over.gif) 100% 0 no-repeat;
+    background: #55b855 url(../img/admin/tool-right_over.gif) 100% 0 no-repeat;
 }
 
 .object-tools a.viewsitelink, .object-tools a.golink {
@@ -596,7 +599,7 @@ a.deletelink:hover {
 }
 
 .object-tools a.viewsitelink:hover, .object-tools a.golink:hover {
-    background: #5b80b2 url(../img/admin/tooltag-arrowright_over.gif) top right no-repeat;
+    background: #55b855 url(../img/admin/tooltag-arrowright_over.gif) top right no-repeat;
 }
 
 .object-tools a.addlink {
@@ -689,9 +692,10 @@ table#change-history tbody th {
 /* HEADER */
 
 #header {
-    background: #060;
+    background: #060 url(/medios/admin/img/admin/top_bar.png) top repeat-x;
     color: #ffc;
     overflow: hidden;
+	text-shadow:0 -0.05em 0 #333;
 }
 
 #header a:link, #header a:visited {
@@ -719,7 +723,7 @@ table#change-history tbody th {
 }
 
 #user-tools {
-	color:#62c3d0;
+	color:#9F6;
     position: absolute;
     top: 0;
     right: 0;

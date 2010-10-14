@@ -8,13 +8,15 @@
 {% block content_title %}{% endblock %}
 
 {% block breadcrumbs %}{% endblock %}
-
 {% block content %}
 {% if error_message %}
 <p class="errornote">{{ error_message }}</p>
-{% endif %}
+<p>{% endif %}</p>
+
+
 <div id="content-main">
-<form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+  <form action="{{ app_path }}" method="post" id="login-form">
+  {% csrf_token %}
   <div class="form-row">
     <label for="id_username">{% trans 'Username:' %}</label> <input type="text" name="username" id="id_username" />
   </div>
@@ -30,5 +32,7 @@
 <script type="text/javascript">
 document.getElementById('id_username').focus()
 </script>
-</div>
-{% endblock %}
+
+
+
+</div>{% endblock %}

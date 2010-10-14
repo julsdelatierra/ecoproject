@@ -1,22 +1,27 @@
 /* LOGIN FORM */
 
 body.login {
-    background: #eee;
+    background:#FFF url(/medios/admin/img/admin/bg_full_login.jpg) top no-repeat;
 }
 
+
 .login #container {
-    background: white;
-    border: 1px solid #ccc;
-    width: 28em;
+    background:url(/medios/admin/img/admin/login_bg.png) bottom no-repeat;
+    /*border: 1px solid #ccc;*/
+    width: 337px;
     min-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 190px;
 }
 
 .login #content-main {
     width: 100%;
 }
+
+.login #container h1{
+	text-align:center;
+	}
 
 .login form {
     margin-top: 1em;
@@ -52,3 +57,4 @@ body.login {
     padding: 1em 0 0 9.4em;
 }
 
+#wiseman_logo{text-aligin:center; margin:0px auto;}
