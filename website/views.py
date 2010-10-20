@@ -77,12 +77,17 @@ def questionsList(request):
 
 def answer(request):
     if request.is_ajax():
+        print request.POST
         from models import Answer
         from django.conf import settings
-        answer = Answer.objects.get(question__exact=request.POST['questionId'])
+        print 'here'
+        answer = Answer.objects.get(question__id=request.POST['questionId'])
+        print answer
         if settings.LANGUAGE_CODE == 'es':
+            print answer.text
             return HttpResponse(answer.text)
         else:
+            print answer.text_en
             return HttpResponse(answer.text_en)
     else:
         return HttpResponse('Invalid access method')

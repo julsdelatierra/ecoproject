@@ -3,6 +3,9 @@ $("document").ready(function(){
     var actual_question_pressed = null;
     var question = null;
     
+    $('.topic_button:first').addClass("selected");
+    questions_box($('.topic_button:first').attr('id'));
+    
     preLoad = function() {
         if (!document.images) return;
         var ar = new Array();
@@ -37,6 +40,10 @@ $("document").ready(function(){
     
     /*class="topic_button" clicked*/
     $('.topic_button').click(function(){
+        if($('.selected').val()!=undefined){
+            $('.selected').removeClass('selected');
+        }
+        $(this).addClass('selected');
         questions_box($(this).attr('id'));
     });
     
@@ -102,4 +109,34 @@ $("document").ready(function(){
             }
         });
     });
+    
+    /*Contact page*/
+    $('#form1 #name').live('focus',function(){
+        console.log($(this).val());
+        if($(this).val()=='Nombre'||$(this).val()=='Name'){
+            $(this).val('');
+        }
+    });
+    
+    $('#form1 #phone').live('focus',function(){
+        console.log($(this).val());
+        if($(this).val()=='Telefono'||$(this).val()=='Phone'){
+            $(this).val('');
+        }
+    });
+    
+    $('#form1 #email').live('focus',function(){
+        console.log($(this).val());
+        if($(this).val()=='Email'||$(this).val()=='correo'){
+            $(this).val('');
+        }
+    });
+    
+    $('#form1 #comments').live('focus',function(){
+        console.log($(this).val());
+        if($(this).val()=='Pregunta'||$(this).val()=='Question'){
+            $(this).html('');
+        }
+    });
+    
 });

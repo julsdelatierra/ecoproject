@@ -294,4 +294,9 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 ::selection{
     background: #D4F699; /* color de fondo */
 }
+
+.selected{
+	font-weight: bold;
+	color: red;
+}
 /*--------------------------------- /PIMP MY WEB ---------------------------------*/
