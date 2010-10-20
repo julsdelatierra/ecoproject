@@ -38,9 +38,14 @@ def projectDescription(request):
     if request.is_ajax():
         from models import Project
         from django.utils import simplejson
+        from django.conf import settings
         project = Project.objects.get(id__exact=request.POST['projectId'])
-        result = {'image':project.image.url,'name':project.name,
+        if settings.LANGUAGE_CODE == 'es':
+            result = {'image':project.image.url,'name':project.name,
                   'description':project.description,'year':project.year}
+        else:
+            result = {'image':project.image.url,'name':project.name_en,
+                  'description':project.description_en,'year':project.year}
         return HttpResponse(simplejson.dumps(result),
                             mimetype='application/json')
     else:
@@ -57,10 +62,14 @@ def questionsList(request):
     if request.is_ajax():
         from models import Question
         from django.utils import simplejson
+        from django.conf import settings
         questions = Question.objects.filter(topic__exact=request.POST['topicId'])
         quest_array = []
         for question in questions:
-            quest_array.append({'id':question.id,'text':question.text})
+            if settings.LANGUAGE_CODE == 'es':
+                quest_array.append({'id':question.id,'text':question.text})
+            else:
+                quest_array.append({'id':question.id,'text':question.text_en})
         return HttpResponse(simplejson.dumps(quest_array),
                             mimetype='application/json')
     else:
@@ -69,8 +78,12 @@ def questionsList(request):
 def answer(request):
     if request.is_ajax():
         from models import Answer
+        from django.conf import settings
         answer = Answer.objects.get(question__exact=request.POST['questionId'])
-        return HttpResponse(answer)
+        if settings.LANGUAGE_CODE == 'es':
+            return HttpResponse(answer.text)
+        else:
+            return HttpResponse(answer.text_en)
     else:
         return HttpResponse('Invalid access method')
     
