@@ -54,8 +54,16 @@ def projectDescription(request):
 def faq(request):
     from models import Topic
     from django.utils import simplejson
+    from django.conf import settings
     topics = Topic.objects.all()
-    return render_to_response('faq.html',{'topics':topics},
+    results = []
+    if settings.LANGUAGE_CODE == 'es':
+        for topic in topics:
+            results.append({'id':topic.id, 'title':topic.title})
+    else:
+        for topic in topics:
+            results.append({'id':topic.id, 'title':topic.title_en})
+    return render_to_response('faq.html',{'topics':results},
                               context_instance=RequestContext(request))
 
 def questionsList(request):
@@ -77,25 +85,26 @@ def questionsList(request):
 
 def answer(request):
     if request.is_ajax():
-        print request.POST
         from models import Answer
         from django.conf import settings
-        print 'here'
-        answer = Answer.objects.get(question__id=request.POST['questionId'])
-        print answer
+        answer = Answer.objects.get(question__exact=request.POST['questionId'])
         if settings.LANGUAGE_CODE == 'es':
-            print answer.text
             return HttpResponse(answer.text)
         else:
-            print answer.text_en
             return HttpResponse(answer.text_en)
     else:
         return HttpResponse('Invalid access method')
     
 def contacto(request):
     return render_to_response('contacto.html',{},
-                              context_instance=RequestContext(request))
+                                    context_instance=RequestContext(request))
 
+def contactCEO(request):
+    if request.is_ajax():
+        return HttpResponse('hola')
+    else:
+        return HttpResponse('Invalid access method')
+    
 def questionContact(request):
     if request.is_ajax():
         print request.POST
@@ -103,7 +112,7 @@ def questionContact(request):
         message = request.POST['comment']
         sender = request.POST['email']
         from django.core.mail import send_mail
-        #send_mail(subject,message,sender,['contacto@ecoconsultores.com.mx'])
+        #send_mail(subject,message,sender,['contacto@ecoconsultores.mx'])
         return HttpResponse('ready')
     else:
         return HttpResponse('Invalid access method')

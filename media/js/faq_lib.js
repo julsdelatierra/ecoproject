@@ -20,7 +20,8 @@ questions_box = function(topicId){
 };
 
 write_answer_and_dialog = function(sender,data){
-    var content = '<span id="answer+'+$(sender).attr('id')+'" class="answer" style="display:none;">'+data+'</span>'
+    var content = '<span id="answer+'+$(sender).attr('id')+'" class="answer"\
+    style="display:none;">'+data+'</span>'
     var DIALOG = '\
     <div id="globe_faq_form" style="display:none;">\
         <div id="form_title">&iquest;A&uacute;n con dudas?, escr&iacute;benos.</div>\
@@ -83,6 +84,7 @@ question_contact = function(question){
             'comment':$('#comment').val()
         },
         success:function(){
+            $('#notice').slideDown('slow').delay(2000).slideUp('slow');
             remove_answer_contact_area();
         }
     });

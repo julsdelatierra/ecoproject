@@ -26,6 +26,7 @@ urlpatterns = patterns('',
     (r'^answer/$',website.answer),
     (r'^questioncontact/$',website.questionContact),
     (r'^switchlanguage/$',website.switchLanguage),
+    (r'^contactceo/$',website.contactCEO),
     # Example:
     # (r'^ecoproject/', include('ecoproject.foo.urls')),
 

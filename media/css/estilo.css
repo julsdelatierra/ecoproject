@@ -232,11 +232,11 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 #questions_list #top{width:320px; height:39px; margin-right:12px; float:left; background:url(/medios/img/questions_top_bg.png) no-repeat; text-align:center; color:#56AC41; font-size:20pt; padding:10px 0 0 0;}
 #questions_list .middle{width:320px; background:url(/medios/img/questions_middle_bg.png) repeat-y; float:left; }
 #questions_list #bottom{width:320px; height:19px; background:url(/medios/img/questions_bottom_bg.png) no-repeat; float:left;}
-#questions_list li{color:#27AAE1; font-size:17pt; list-style-type:none;}
+#questions_list li{font-size:17pt; list-style-type:none;}
 #questions_list li a{text-decoration:none;}
 #questions_list li a:hover{text-decoration:underline;}
 
-.topic_button{cursor:pointer;}
+.topic_button{cursor:pointer; color:#aaa;}
 
 #answers_list{width:627px; float:left;}
 #answers_list #top{width:627px; height:14px; background:url(/medios/img/answers_top_bg.png) no-repeat; float:left;}
@@ -296,7 +296,30 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 }
 
 .selected{
-	font-weight: bold;
-	color: red;
+	color:#27AAE1;
+}
+
+.notice{
+	height:20px;
+	padding: 10px 0 10px 0;
+	border: 2px #d4aa00 solid;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	text-align: center;
+	background:#ffeeaa;
+	margin-bottom: 20px;
+}
+
+#error{
+	height:20px;
+	padding: 10px 0 10px 0;
+	border: 2px #ff0000 solid;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	text-align: center;
+	background:#ffaaaa;
+	margin-bottom: 20px;
 }
 /*--------------------------------- /PIMP MY WEB ---------------------------------*/

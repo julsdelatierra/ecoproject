@@ -23,27 +23,48 @@ Vestibulum mollis mauris enim.
 Morbi euismod magna ac lorem rutrum elementum.
 </div>
 
+<div style="clear:both;"></div>
+<div id="notice" style="display:none;" class="notice">
+    Tu comentario ha sido enviado correctamente, gracias.
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="error" style="display:none;">
+    Lo sentimos pero no se ha podido enviar tu comentario, revisa los datos
+    ingresados e intenta de nuevo, por favor.
+</div>
+
 <div id="globe_contact_form">
-<form id="form1" name="form1" method="post" action="">
-    <table width="200" border="0">
-  <tr>
-    <td><label for="name"></label>
-      <input name="name" type="text" id="name" value="Nombre" /></td>
-    <td><label for="phone"></label>
-      <input name="phone" type="text" id="phone" value="Teléfono" /></td>
-    <td><label for="email"></label>
-      <input name="email" type="text" id="email" value="Email" /></td>
-  </tr>
-  <tr>
-    <td colspan="3"><label for="comments"></label>
-      <textarea name="comments" id="comments" cols="45" rows="5">Pregunta</textarea></td>
+<table width="200" border="0" id="form1" name="form1">
+    <tr>
+        <td>
+            <label for="name"></label>
+            <input name="name" type="text" id="name" value="Nombre" />
+        </td>
+        <td>
+            <label for="phone"></label>
+            <input name="phone" type="text" id="phone" value="Telefono" />
+        </td>
+        <td>
+            <label for="email"></label>
+            <input name="email" type="text" id="email" value="Email" />
+        </td>
     </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td align="right"><input type="submit" name="button" id="button" value="Enviar" /></td>
-  </tr>
-</table></form>
+    <tr>
+        <td colspan="3">
+            <label for="comments"></label>
+            <textarea name="comments" id="comments" cols="45" rows="5">Pregunta</textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td align="right">
+            <input type="button" id="contact" value="Enviar" />
+        </td>
+    </tr>
+</table>
 </div>
 
 <div id="contact_data">

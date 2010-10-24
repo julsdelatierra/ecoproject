@@ -22,14 +22,22 @@ Vestibulum mollis mauris enim.
 Morbi euismod magna ac lorem rutrum elementum.
 {%endblocktrans%}
 </div>
-
+<div style="clear:both;"></div>
+<div id="notice" style="display:none;" class="notice">
+    Tu comentario ha sido enviado correctamente, gracias.
+</div>
+<div style="clear:both;"></div>
+<div id="error" style="display:none;">
+    Lo sentimos pero no se ha podido enviar tu comentario, revisa los datos
+    ingresados e intenta de nuevo, por favor.
+</div>
 <div id="questions_list">
 <div id="top">{%trans 'Titulo'%}</div>
 <div class="middle">
     <ul>
-    {%for topic in topics%}
-        <li id="{{topic.id}}" class="topic_button">{{topic.title}}</li>
-    {%endfor%}
+        {%for topic in topics%}
+            <li id="{{topic.id}}" class="topic_button">{{topic.title}}</li>
+        {%endfor%}
     </ul>
 </div>
 <div id="bottom"></div>
@@ -37,11 +45,7 @@ Morbi euismod magna ac lorem rutrum elementum.
 
 <div id="answers_list">
     <div id="top"></div>
-    <div id="questions_container" class="middle">
-        <h2>Elige alguno de los t&iacute;tulos</h2>
-  </div>
-
+    <div id="questions_container" class="middle"></div>
     <div id="bottom"></div>
 </div>
-
 {%endblock%}

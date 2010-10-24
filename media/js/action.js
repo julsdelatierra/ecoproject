@@ -40,7 +40,7 @@ $("document").ready(function(){
     
     /*class="topic_button" clicked*/
     $('.topic_button').click(function(){
-        if($('.selected').val()!=undefined){
+        if($('.selected')!=undefined){
             $('.selected').removeClass('selected');
         }
         $(this).addClass('selected');
@@ -50,9 +50,9 @@ $("document").ready(function(){
     /*class="question_button" clicked*/
     $('.question_button').live('click',function(){
         if((actual_question_pressed != $(this).attr('id')) && (actual_question_pressed == null)){
-            answer($(this));
             actual_question_pressed = $(this).attr('id');
             question = $(this).html();
+            answer($(this));
             return;
         }
         if((actual_question_pressed == $(this).attr('id')) && (actual_question_pressed != null)){
@@ -73,7 +73,7 @@ $("document").ready(function(){
             question = null;
         }
         else{
-            $('#error_area').html('<div class="error" style="display:none">Verifica tu correo</div>');
+            $('#error_area').html('<div class="error" style="display:none">Verifica tus datos</div>');
             $('.error').slideDown('slow').delay(2000).slideUp('slow');
         }
     });
@@ -103,39 +103,53 @@ $("document").ready(function(){
         console.log('click');
         $.ajax({
             url:'/switchlanguage/',
-            type:'POST',
-            success:function(){
-                console.log('fuck');
-            }
+            type:'POST'
         });
     });
     
     /*Contact page*/
     $('#form1 #name').live('focus',function(){
-        console.log($(this).val());
         if($(this).val()=='Nombre'||$(this).val()=='Name'){
             $(this).val('');
         }
     });
     
     $('#form1 #phone').live('focus',function(){
-        console.log($(this).val());
         if($(this).val()=='Telefono'||$(this).val()=='Phone'){
             $(this).val('');
         }
     });
     
     $('#form1 #email').live('focus',function(){
-        console.log($(this).val());
-        if($(this).val()=='Email'||$(this).val()=='correo'){
+        if($(this).val()=='Email'||$(this).val()=='Correo'){
             $(this).val('');
         }
     });
     
     $('#form1 #comments').live('focus',function(){
-        console.log($(this).val());
         if($(this).val()=='Pregunta'||$(this).val()=='Question'){
             $(this).html('');
+        }
+    });
+    
+    $('#contact').click(function(){
+        re = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        email_valid = re.test($('#form1 #email').val());
+        if(email_valid&&$('#form1 #email').val()!=''){
+            $.ajax({
+                url:'/contact/',
+                method:'POST',
+                data:{},
+                success:function(data){
+                    $('#notice').slideDown('slow').delay(3000).slideUp('slow');
+                },
+                error:function(){
+                    $('#error').slideDown('slow').delay(4000).slideUp('slow');
+                }
+            });
+        }
+        else{
+            $('#error').slideDown('slow').delay(4000).slideUp('slow');
         }
     });
     

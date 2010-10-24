@@ -55,6 +55,7 @@ LOCALE_INDEPENDENT_PATHS = (
     re.compile('/answer/'),
     re.compile('/questioncontact/'),
     re.compile('/switchlanguage/'),
+    re.compile('/contactpeople/'),
 )
 
 SITE_ID = 1
