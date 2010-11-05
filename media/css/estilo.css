@@ -161,6 +161,7 @@ html, body {
 #head_big #title_company{width:572px; color:#FFF; font-size:35pt; float:left; margin:77px 0 0 58px ; text-align:left; text-shadow:0 -0.03em #045500;}
 #head_big #subtitle_company{width:572px; color:#231F20; font-size:13pt; float:left; text-align:left; margin:0 0 0 58px; font-family: 'AllerLightRegular', sans-serif;}
 #content #company_philosophy{width:490px; height:261px; float:left; margin:20px 0 0 70px; color:#58595B;}
+#content #company_philosophy p{line-height:18pt;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
 #content #company_philosophy span#text{font-family: 'AllerLightRegular', sans-serif; text-align:justify;}
 #globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:25px 0 50px 77px; padding:58px 30px 23px 30px;}
@@ -198,7 +199,8 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 
 /*//////////////////////////////[ SERVICIOS ]//////////////////////////////////////*/
-.globe_services{width:916px; height:230px;  background:url(/medios/img/globo_servicios.png) no-repeat; margin:20px auto; padding-top:55px; display:block; }
+.globe_services{width:916px; height:230px;  background:url(/medios/img/globo_servicios.png) no-repeat; margin:20px auto; padding-top:55px; display:block;}
+.globe_services p {line-height:18pt;}
 .globe_services #text{ margin:30px; font-size:14pt; color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 .globe_services span{color:#27AAE1; font-family: 'AllerLightRegular', sans-serif;}
 
