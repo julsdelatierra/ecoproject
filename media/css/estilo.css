@@ -159,9 +159,9 @@ html, body {
 
 /*//////////////////////////////[ EMPRESA ]//////////////////////////////////////*/
 #head_big #title_company{width:572px; color:#FFF; font-size:35pt; float:left; margin:77px 0 0 58px ; text-align:left; text-shadow:0 -0.03em #045500;}
-#head_big #subtitle_company{width:572px; color:#231F20; font-size:13pt; float:left; text-align:left; margin:0 0 0 58px; font-family: 'AllerLightRegular', sans-serif;}
+#head_big #subtitle_company{width:572px; color:#231F20; font-size:13pt; float:left; text-align:left; margin:0 0 0 58px; font-family: 'AllerRegular', sans-serif; font-weight:400;}
 #content #company_philosophy{width:490px; height:261px; float:left; margin:20px 0 0 70px; color:#58595B;}
-#content #company_philosophy p{line-height:18pt;}
+#content #company_philosophy p{line-height:15pt;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
 #content #company_philosophy span#text{font-family: 'AllerLightRegular', sans-serif; text-align:justify;}
 #globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:25px 0 50px 77px; padding:58px 30px 23px 30px;}
@@ -204,11 +204,9 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 .globe_services #text{ margin:30px; font-size:14pt; color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 .globe_services span{color:#27AAE1; font-family: 'AllerLightRegular', sans-serif;}
 
-.globe_services_bottom{width:931px; height:350px;  background:url(/medios/img/globo_bottom_servicios.png) no-repeat bottom; margin:25px auto; display:block;}
+.globe_services_bottom{width:931px; height:115px;  background:url(/medios/img/globo_bottom_servicios.png) no-repeat bottom center; margin:25px auto 15px auto; display:block; overflow:hidden;}
 .globe_services_bottom #left{width:465px; height:299px; float:left;}
 .globe_services_bottom #right{width:450px; margin-left:15px; height:299px; float:left;}
-
-
 
 .globe_services_bottom .title{ margin:15px; font-size:30pt; color:#51A33D;}
 .globe_services_bottom .text{ width:400px; margin:15px 25px 5px 15px; font-size:11pt; color:#58595B; text-align:justify; font-family: 'AllerLightRegular', sans-serif;}
@@ -218,11 +216,44 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 
 .globe_services_bottom .link_bottom a:hover{text-decoration:underline;}
 
-.globe_services_bottom #left_link{width:465px; float:left; margin-top:18px; font-size:11pt; text-align:center;}
+.globe_services_bottom #left_link{width:465px; float:left; margin-top:85px; font-size:11pt; text-align:center;}
 .globe_services_bottom #left_link .link_bottom a{color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 
-.globe_services_bottom #right_link{width:450px; margin-left:15px; float:left; margin-top:18px; font-size:11pt; text-align:center;}
+.globe_services_bottom #right_link{width:450px; margin-left:15px; float:left; margin-top:85px; font-size:11pt; text-align:center;}
 .globe_services_bottom #right_link .link_bottom a{color:#56AC41; font-family: 'AllerLightRegular', sans-serif;}
+
+
+#services_container{width:931px; height:50px;  no-repeat bottom; margin:25px auto;}
+
+#process{ 
+outline:1px solid green;
+margin-top:10px auto;
+}
+
+#process li{
+display:inline;
+float:left;
+margin:5px 8px;
+}
+
+#actions {
+list-style-type:none;
+}
+
+#actions_container{
+width:310px;
+float:left;
+outline:1px solid red;
+margin-top:10px;
+}
+
+#actions_content{
+outline:1px solid gray;
+width:590px;
+margin:10px 0 0 10px;
+padding:10px;
+float:left;
+}
 
 /*----------------------------- /SERVICIOS ---------------------------------------*/
 

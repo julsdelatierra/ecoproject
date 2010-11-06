@@ -8,20 +8,14 @@
 
 {%block header%}
 <div id="head_medium">
-<div id="title">Contactenos in di mauris. Vivamus.</div>
+<div id="title">{%trans 'Tenemos un asesor cerca de usted.'%}</div>
 </div>
 {%endblock%}
 
 
 
 {%block content%}
-<div class="main_text">
-Sed nec diam eu diam mattis viverra.
-Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris,
-quis sollicitudin sapien justo in libero.
-Vestibulum mollis mauris enim.
-Morbi euismod magna ac lorem rutrum elementum.
-</div>
+<div class="main_text"> {%trans 'Si aún tiene dudas, o preguntas acerca de que hacemos en ECO, siéntase libre de escribirnos a nuestro correo electrónico, visitar nuestro sitio en google maps para ubicarnos más fácilmente, o llamarnos por teléfono, atenderemos su solicitud a la brevedad, en ECO, te decimos cómo.'%}</div>
 
 <div style="clear:both;"></div>
 <div id="notice" style="display:none;" class="notice">
@@ -40,42 +34,42 @@ Morbi euismod magna ac lorem rutrum elementum.
     <tr>
         <td>
             <label for="name"></label>
-            <input name="name" type="text" id="name" value="Nombre" />
+            <input name="name" type="text" id="name" value="{%trans 'Nombre'%}" />
         </td>
         <td>
             <label for="phone"></label>
-            <input name="phone" type="text" id="phone" value="Telefono" />
+            <input name="phone" type="text" id="phone" value="{%trans 'Telefono'%}" />
         </td>
         <td>
             <label for="email"></label>
-            <input name="email" type="text" id="email" value="Email" />
+            <input name="email" type="text" id="email" value="{%trans 'Email' %}" />
         </td>
     </tr>
     <tr>
         <td colspan="3">
             <label for="comments"></label>
-            <textarea name="comments" id="comments" cols="45" rows="5">Pregunta</textarea>
+            <textarea name="comments" id="comments" cols="45" rows="5">{%trans 'Pregunta'%}</textarea>
         </td>
     </tr>
     <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td align="right">
-            <input type="button" id="contact" value="Enviar" />
+            <input type="button" id="contact" value="{%trans 'Enviar' %}" />
         </td>
     </tr>
 </table>
 </div>
 
 <div id="contact_data">
-<div id="data"><b>Dirección física:</b><br />
+<div id="data"><b>{%trans 'Dirección física:</b>'%}<br />
   Avenida 56-A # 236 x 58-A y 60 Col. Alcalá Martín.<br />
 Mérida, YUC, México,<br />
 CP. 97050<br />
 <br />
-<b>Teléfonos:</b><br />
+<b>{%trans 'Teléfonos:'%}</b><br />
 +52 (999) 9415285<br />
 +52 (999) 9652365</div>
-<div id="google_button"><a href="http://maps.google.com/maps?client=safari&q=maps+merida+mexico&oe=UTF-8&ie=UTF8&hq=&hnear=Merida,+Yucat%C3%A1n,+Mexico&ei=PEqrTKXeCsHflgfB3OGXCA&ved=0CBoQ8gEwAA&ll=20.992014,-89.618182&spn=0.000731,0.002838&t=h&z=19&layer=c&cbll=20.991963,-89.618189&panoid=vxpaqmk3zocsj02x0-bbjg&cbp=11,224.4,,0,5.6" target="_new">Encuentranos en Google Maps</a></div>
+<div id="google_button"><a href="http://maps.google.com/maps?client=safari&q=maps+merida+mexico&oe=UTF-8&ie=UTF8&hq=&hnear=Merida,+Yucat%C3%A1n,+Mexico&ei=PEqrTKXeCsHflgfB3OGXCA&ved=0CBoQ8gEwAA&ll=20.992014,-89.618182&spn=0.000731,0.002838&t=h&z=19&layer=c&cbll=20.991963,-89.618189&panoid=vxpaqmk3zocsj02x0-bbjg&cbp=11,224.4,,0,5.6" target="_new">{%trans 'Encuentranos en Google Maps'%}</a></div>
 </div>
 {%endblock%}
