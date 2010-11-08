@@ -223,12 +223,20 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 .globe_services_bottom #right_link .link_bottom a{color:#56AC41; font-family: 'AllerLightRegular', sans-serif;}
 
 
-#services_container{width:931px; height:50px;  no-repeat bottom; margin:25px auto;}
+#services_container{width:916px;  margin:25px;}
+#process_container{
+width:916px; height:36px;
+background:#099;
+background:url(/medios/img/back_menu_services.png) no-repeat;
+}
 
 #process{ 
-outline:1px solid green;
 margin-top:10px auto;
+padding-top:6px;
 }
+
+#process a{color:#AAAAAA; text-decoration:none; font-weight:bolder; font-size:11pt;}
+#process a:hover{color:#27AAE1; text-decoration:underline;}
 
 #process li{
 display:inline;
@@ -241,18 +249,51 @@ list-style-type:none;
 }
 
 #actions_container{
-width:310px;
+width:312px;
 float:left;
-outline:1px solid red;
 margin-top:10px;
+}
+#actions_container #top{
+width:312px; height:16px;
+float:left;
+background:url(/medios/img/services_actions_menu_top.png) no-repeat;
+}
+#actions_container #middle{
+width:312px;
+float:left;
+background:url(/medios/img/services_actions_menu_middle.png) repeat-y;
+}
+
+#actions_container #middle a{color:#AAAAAA; text-decoration:none; font-size:15pt;}
+#actions_container #middle a:hover{color:#27AAE1;}
+
+#actions_container #bottom{
+width:312px; height:16px;
+float:left;
+background:url(/medios/img/services_actions_menu_bottom.png) no-repeat;
 }
 
 #actions_content{
-outline:1px solid gray;
-width:590px;
+width:593px;
 margin:10px 0 0 10px;
-padding:10px;
 float:left;
+}
+
+#actions_content #top{
+width:593px; height:16px;
+float:left;
+background:url(/medios/img/services_actions_content_top.png) no-repeat;
+}
+#actions_content #middle{
+width:553px;
+float:left;
+padding:0 20px;
+background:url(/medios/img/services_actions_content_middle.png) repeat-y;
+}
+#actions_content #bottom{
+width:593px; height:16px;
+float:left;
+background:url(/medios/img/services_actions_content_bottom.png) no-repeat bottom;
 }
 
 /*----------------------------- /SERVICIOS ---------------------------------------*/
@@ -299,8 +340,8 @@ float:left;
 #globe_contact_form table{margin:52px 0 0 21px;}
 #globe_contact_form input{width:277px; height:27px; background:url(/medios/img/input_contacto_bg.png) no-repeat; border:none; color:#A3A2A2; padding:5px 0 5px 15px; font-size:11pt; font-family: 'AllerLightRegular', sans-serif;}
 #globe_contact_form textarea{width:869px; height:134px; background:url(/medios/img/textarea_contacto_bg.png) no-repeat; color:#A3A2A2; border:none; padding:5px 0 5px 15px; font-size:11pt; resize:none; font-family: 'AllerLightRegular', sans-serif; overflow:auto;}
-#globe_contact_form input[type=submit]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; font-family: 'AllerLightRegular', sans-serif; padding:0; margin-right:12px;}
-#globe_contact_form input[type=submit]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
+#globe_contact_form input[type=button]{background:url(/medios/img/send_button.png) no-repeat; border:none; width:101px; height:25px; color:#FFF; font-size:11pt; outline:none; font-family: 'AllerLightRegular', sans-serif; padding:0; margin-right:12px;}
+#globe_contact_form input[type=button]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
 
 #contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; padding-bottom:50px;}
 #contact_data #data b{font-weight:bolder;}
