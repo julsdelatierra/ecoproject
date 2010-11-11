@@ -4,7 +4,7 @@ var data = [
         "processed":[
             {
                 "name":"Evaluaci&oacute;n de impacto ambiental",
-                "content":"- Manifestaciones de impacto ambiental en sus distintas modalidades<br>- Evaluaci&oacute;n de da&os ambientales<br>- Cambio de uso del suelo y Estudios Técnicos Justificativos<br>- Programa de rescate y de reforestaci&oacute;n<br>- Seguimiento de cumplimiento de t&eacute;rminos y condicionantes"
+                "content":"- Manifestaciones de impacto ambiental en sus distintas modalidades<br>- Evaluaci&oacute;n de daños ambientales<br>- Cambio de uso del suelo y Estudios Técnicos Justificativos<br>- Programa de rescate y de reforestaci&oacute;n<br>- Seguimiento de cumplimiento de t&eacute;rminos y condicionantes"
             },
             {
                 "name":"Residuos peligrosos",
