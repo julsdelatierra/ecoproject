@@ -4,20 +4,20 @@ $("document").ready(function(){
         for(var i=0; i<7; i++){
             $('#process').append('<li id="'+i+'">'+data[i].name+'</li>');
             $('#process #'+i).live('click',function(){
-                $('#actions_content').hide();
+                $('#container_actions').hide();
                 $('#actions_container').hide();
                 $('#actions').html('');
                 $('#actions_content').html('');
                 processed = data[$(this).attr('id')].processed;
-                $('#actions_content').fadeIn('fast');
+                $('#container_actions').fadeIn('fast');
                 $('#actions_container').fadeIn('fast');
                 for(var j=0; j<processed.length; j++){
                     $('#actions').append('<li id="'+j+'">'+processed[j].name+'</li>');
                     $('#actions_content').html(processed[0].content);
                     $('#actions #'+j).live('click',function(){
-                        $('#actions_content').hide();
+                        $('#container_actions').hide();
                         $('#actions_content').html(processed[$(this).attr('id')].content);
-                        $('#actions_content').fadeIn('fast');
+                        $('#container_actions').fadeIn('fast');
                     });
                 }
             });
