@@ -166,9 +166,9 @@ html, body {
 #content #company_philosophy p{line-height:15pt;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
 #content #company_philosophy span#text{font-family: 'AllerLightRegular', sans-serif; text-align:justify;}
-#globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:25px 0 50px 77px; padding:58px 30px 23px 30px;}
-#globe_company .title{color:#27AAE1; font-size:15pt;}
-#globe_company .text{color:#414042; font-size:11pt;  font-family: 'AllerLightRegular', sans-serif;}
+#globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:25px 0 50px 77px; padding:78px 30px 23px 30px;}
+#globe_company span.title{color:#27AAE1; font-size:15pt; line-height:20pt;}
+#globe_company .text{color:#414042; font-size:11pt;  font-family: 'AllerLightRegular', sans-serif; margin-top:10px; padding-top:10px; line-height:15pt;}
 #globe_company .link a{color:#56AC41; text-decoration:none; font-size:11pt; text-align:right; font-family: 'AllerLightRegular', sans-serif;}
 #globe_company .link a:hover{text-decoration:underline;}
 /*------------------------------ /EMPRESA ---------------------------------------*/
@@ -241,9 +241,9 @@ padding-top:10px;
 
 #process li{
 display:inline;
-margin:5px 8px;
+margin:5px 6px;
 cursor:pointer;
-font-weight:bolder; color:#56AC41;
+color:#56AC41;
 font-size:10pt;
 }
 
