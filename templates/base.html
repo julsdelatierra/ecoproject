@@ -18,8 +18,12 @@
         <div class="nofooter">
         <div id="container">
         <div id="menu_container">
-        <form id="language_switch_button" method="post" action="/switchlanguage/">
-            {% csrf_token %}<input type="submit" id="switch_language" value="Switch to English"/>
+        
+       
+        
+          <form id="language_switch_button" method="post" action="/switchlanguage/">
+            {% csrf_token %}<input type="submit" id="switch_language" value="Switch to English"/> <input id="access_activecollab_button" type="button" value="Acceso Clientes" onClick="location.href='http://google.com'" />
+            
         </form>
         <a href="/"><div id="boton_index_logo"></div></a>
         <div id="menu">

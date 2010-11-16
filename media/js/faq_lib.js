@@ -28,15 +28,15 @@ write_answer_and_dialog = function(sender,data){
         <table width="278" border="0">\
             <tr>\
                 <td width="144">\
-                    <input type="text" id="name" value="nombre"/>\
+                    <input type="text" id="name" value="Nombre"/>\
                 </td>\
                 <td colspan="2" rowspan="2">\
-                    <textarea id="comment" cols="5" rows="5">comentario</textarea>\
+                    <textarea id="comment" cols="5" rows="5">Comentario</textarea>\
                 </td>\
             </tr>\
             <tr>\
                 <td>\
-                    <input type="text" id="email" value="correo@servidor.com"/>\
+                    <input type="text" id="email" value="Correo@servidor.com"/>\
                 </td>\
             </tr>\
             <tr>\

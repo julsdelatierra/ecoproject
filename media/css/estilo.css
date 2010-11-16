@@ -101,7 +101,8 @@ html, body {
 	#container{width:960px; margin:0px auto;}
 	#menu_container{width:960px; height:145px; float:left; background:url(/medios/img/menu_bg.png)}
 	#language_switch_button{width:960px; height:40px; float:right;}
-	#language_switch_button input{float:right; margin:18px 50px 0 0 ; font-size:9pt; color:#66A83A; font-style:oblique; background: none; border:none;}
+	#access_activecollab_button{float:right;}
+	#language_switch_button input{float:right; margin:18px 50px 0 -50px ; font-size:9pt; color:#66A83A; font-style:oblique; background: none; border:none;}
 	#language_switch_button input:hover{text-decoration:underline; cursor:pointer; color:#31B3D0;}
 	
 	#menu{float:right; margin:14px 50px 0 0; text-decoration:none;}
@@ -147,7 +148,7 @@ html, body {
 	/*--- /CONTENT HEADLINES ----*/
 	
 	/*---- FOOTER ----*/
-	#footer{float:left;	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom; height:76px;  width: 100%; margin-top:50px;}
+	#footer{float:left;	background:url(/medios/img/footer_repeat_bg.png) repeat-x bottom; height:76px;  width: 100%; margin-top:25px;}
 	#footer #arrow_footer{background:url(/medios/img/arrow_up_footer.png) no-repeat; background-position:862px 10px; width:960px; height:50px; margin:0px auto;}
 	#footer_content{width:960px; margin:0px auto; color:#FFF; font-size:12px; text-shadow:0 -0.1em #1C5100; text-align:left;}
 	#year{float:right; margin-right:12px;}
@@ -166,7 +167,7 @@ html, body {
 #content #company_philosophy p{line-height:15pt;}
 #content #company_philosophy span#title{font-size:28pt; color:#51A33D;}
 #content #company_philosophy span#text{font-family: 'AllerLightRegular', sans-serif; text-align:justify;}
-#globe_company{width:258px; height:242px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:25px 0 50px 77px; padding:78px 30px 23px 30px;}
+#globe_company{width:243px; height:222px; float:left; background:url(/medios/img/globe_empresa.png) no-repeat; margin:25px 0 50px 77px; padding:58px 40px 23px 35px;}
 #globe_company span.title{color:#27AAE1; font-size:15pt; line-height:20pt;}
 #globe_company .text{color:#414042; font-size:11pt;  font-family: 'AllerLightRegular', sans-serif; margin-top:10px; padding-top:10px; line-height:15pt;}
 #globe_company .link a{color:#56AC41; text-decoration:none; font-size:11pt; text-align:right; font-family: 'AllerLightRegular', sans-serif;}
@@ -181,13 +182,13 @@ html, body {
 #globo_inicio{width:550px; height:191px; float:right; background:url(/medios/img/globo_inicio.png) no-repeat; margin:85px 50px 0 0;}
 #globo_inicio #big_text{width:100%; float:right; font-size:45pt; margin:30px 0 0 0; text-align:center; color:#56AC41; text-shadow:0 -1px #666;}
 #globo_inicio #tiny_text{width:100%; float:right; font-size:14pt; color:#6D6E71; float:right; text-align:center; font-family: 'AllerRegular', sans-serif;}
-#parrafo_inicio{width:500px; color:#58595B; font-size:11pt; text-align:justify; float:right; margin:15px 72px 55px 0; font-family: 'AllerLightRegular', sans-serif;}
+#parrafo_inicio{width:500px; color:#58595B; font-size:12pt; text-align:justify; float:right; margin:15px 72px 55px 0; font-family: 'AllerLightRegular', sans-serif; line-height:15pt;}
 #parrafo_inicio span{width:500px; color:#58595B; font-size:13pt; text-align:center; color:#000; display:block; font-family: 'AllerItalic', sans-serif;}
 /*----------------------------- /INICIO ---------------------------------------*/
 
 
 /*//////////////////////////////[ PORTAFOLIO ]//////////////////////////////////////*/
-#globe_portfolio{width:917px; height:224px;  background:url(/medios/img/globo_portafolio.png) no-repeat 0 31px; margin:auto; display:block; overflow:hidden;}
+#globe_portfolio{width:917px; height:224px;  background:url(/medios/img/globo_portafolio.png) no-repeat 0 31px; margin:0 auto 60px auto; display:block; overflow:hidden;}
 #globe_portfolio .arrow{width:917px; height:32px; display:block; float:left;}
 #globe_portfolio .arrow_down{width:917px; height:32px; display:block; float:left;}
 
@@ -206,7 +207,7 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 .globe_services #text{ margin:30px; font-size:14pt; color:#58595B; font-family: 'AllerLightRegular', sans-serif;}
 .globe_services span{color:#27AAE1; font-family: 'AllerLightRegular', sans-serif;}
 
-.globe_services_bottom{width:931px; height:115px;  background:url(/medios/img/globo_bottom_servicios.png) no-repeat bottom center; margin:25px auto 15px auto; display:block; overflow:hidden;}
+.globe_services_bottom{width:931px; height:115px;  background:url(/medios/img/globo_bottom_servicios.png) no-repeat bottom center; margin:25px auto 60px auto; display:block; overflow:hidden;}
 .globe_services_bottom #left{width:465px; height:299px; float:left;}
 .globe_services_bottom #right{width:450px; margin-left:15px; height:299px; float:left;}
 
@@ -224,8 +225,9 @@ li.project_button{list-style:none; margin:25px 25px; float:left; cursor:pointer;
 .globe_services_bottom #right_link{width:450px; margin-left:15px; float:left; margin-top:85px; font-size:11pt; text-align:center;}
 .globe_services_bottom #right_link .link_bottom a{color:#56AC41; font-family: 'AllerLightRegular', sans-serif;}
 
-
 #services_container{width:916px;  margin:25px;}
+
+#title_our_services{font-size:28pt; color:#51A33D; text-align:center; margin-bottom:30px;}
 
 #process_container{
 text-align:center;
@@ -244,7 +246,7 @@ display:inline;
 margin:5px 6px;
 cursor:pointer;
 color:#56AC41;
-font-size:10pt;
+font-size:12pt;
 }
 
 #process li:hover{ color:#575757; text-shadow:0 -0.1em #DEFFCE; text-decoration:underline;}
@@ -298,10 +300,15 @@ background:url(/medios/img/services_actions_content_top.png) no-repeat;
 }
 
 #actions_content{
+line-height:20pt;
 width:553px;
 float:left;
 padding:0 20px;
 background:url(/medios/img/services_actions_content_middle.png) repeat-y;
+}
+
+#actions_content li{
+list-style: url(/medios/img/bullet.gif) disc;
 }
 
 #container_actions #bottom{
@@ -312,7 +319,7 @@ background:url(/medios/img/services_actions_content_bottom.png) no-repeat bottom
 
 
 .processedselected{text-decoration:underline;}
-.actionselected{list-style-type:disc;}
+.actionselected{color:#27B9EF; list-style: url(/medios/img/bullet_blue.gif) disc;}
 
 /*----------------------------- /SERVICIOS ---------------------------------------*/
 
@@ -324,7 +331,7 @@ background:url(/medios/img/services_actions_content_bottom.png) no-repeat bottom
 #questions_list #top{width:320px; height:39px; margin-right:12px; float:left; background:url(/medios/img/questions_top_bg.png) no-repeat; text-align:center; color:#56AC41; font-size:20pt; padding:10px 0 0 0;}
 #questions_list .middle{width:320px; background:url(/medios/img/questions_middle_bg.png) repeat-y; float:left; }
 #questions_list #bottom{width:320px; height:19px; background:url(/medios/img/questions_bottom_bg.png) no-repeat; float:left;}
-#questions_list li{font-size:17pt; list-style-type:none;}
+#questions_list li{font-size:17pt; list-style-type:none; margin-bottom:5px;}
 #questions_list li a{text-decoration:none;}
 #questions_list li a:hover{text-decoration:underline;}
 
@@ -338,7 +345,7 @@ background:url(/medios/img/services_actions_content_bottom.png) no-repeat bottom
 #answers_list .middle .question_button{width:581px; height:30px; float:left; background:url(/medios/img/question_button_bg.png) no-repeat; color:#56AC41; font-size:14pt; text-align:left; padding:7px 0 0 12px; margin-left:17px; font-family: 'AllerLightRegular', sans-serif;}
 #answers_list .middle .answer{width:581px; float:left; color:#58595B; font-size:12pt; text-align:left; padding:12px 0 0 12px; margin-left:12px; font-family: 'AllerLightRegular', sans-serif;}
 
-#answers_list #bottom{width:627px; height:14px; background:url(/medios/img/answers_bottom_bg.png) no-repeat; float:left;}
+#answers_list #bottom{width:627px; height:14px; margin-bottom:60px; background:url(/medios/img/answers_bottom_bg.png) no-repeat; float:left;}
 
 .question_button{cursor: pointer;}
 
@@ -362,7 +369,7 @@ background:url(/medios/img/services_actions_content_bottom.png) no-repeat bottom
 #globe_contact_form input[type=button]:hover{background:url(/medios/img/send_button_over.png) no-repeat; border:none; outline:none;}
 
 #contact_data{width:872px; height:137px; margin:0px auto; margin-top:35px; padding-bottom:50px;}
-#contact_data #data b{font-weight:bolder;}
+#contact_data #data b{font-weight:bolder; margin-bottom:-10px;display:block;}
 #contact_data #data{width:422px; height:126px; font-size:10pt; float:left; margin-left:15px; background:url(/medios/img/contact_data_middle_border.png) right no-repeat; color:#6D6E71; font-family: 'AllerLightRegular', sans-serif;}
 #contact_data #google_button a{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom.png) no-repeat; display:block; color:#31B3D0;}
 #contact_data #google_button a:hover{width:262px; height:76px; margin:0 0 0 54px; padding:50px 0 0 110px; float:left; background:url(/medios/img/google_maps_buttom_over.png) no-repeat; display:block; color:#31B3D0;}
